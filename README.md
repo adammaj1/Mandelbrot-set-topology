@@ -1,6 +1,18 @@
 # Mandelbrot-set-topology
 Mandelbrot set topology
 
+How to read informations from images ?
+
+How to describe hyperbolic component of Mandelbrot set ? ( escpecially [island](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/island_t) )
+
+
+
+# Key words
+* [distortion](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/Mandelbrot_set/mset_distortion)
+* computational topology
+* 2D raster graphic
+
+
 
 
 
