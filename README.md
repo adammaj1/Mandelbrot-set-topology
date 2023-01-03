@@ -4,14 +4,31 @@ Mandelbrot set topology
 How to read informations from images ?
 
 How to describe hyperbolic component of Mandelbrot set ? ( escpecially [island](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/island_t) )
-
+* period of main pseudocardioid
+* center of main pseudocardioid
+* window ( radius and center) of parameter plane
+* angles of external rays that land on cusp of the pseudocardiod
+* size of main pseudocardioid
+* orientation
+* distortion
 
 
 # Key words
 * [distortion](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/Mandelbrot_set/mset_distortion)
-* computational topology
-* 2D raster graphic
+* [computational topology](https://en.wikipedia.org/wiki/Computational_topology)
+* [digital topology](https://en.wikipedia.org/wiki/Digital_topology)
+* 2D 
+* [raster graphic](https://en.wikipedia.org/wiki/Raster_graphics)
+* computer graphic
 
+Algorithms
+* [atom domains for period  (= period domains) of Mandelbrot set hyperbolic components](https://commons.wikimedia.org/wiki/File:Mandelbrot_Atom_Domains_Animation.gif)
+* period of Mandelbrot set hyperbolic componnets
+* Boolean Escape Time = BET 
+* [multiplier map](https://commons.wikimedia.org/wiki/File:Mandelbrot_set_-_multiplier_map.png)
+* [interior detection](https://commons.wikimedia.org/wiki/File:Mandelbrot_set_with_Interior_detection_method.png)
+* [The Lyapunov exponent](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/Mandelbrot_set_interior)
+* [Interior distance estimation](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/demm#Interior_distance_estimation) - DEM 
 
 
 
