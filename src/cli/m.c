@@ -850,7 +850,7 @@ void PrintInfoAboutImage(const int k){
 	//fprintf(stdout, "pseudo_cardioid_center = %.16f %+0.16f\n",creal(pseudo_cardioid_center), cimag(pseudo_cardioid_center));
 	fprintf(stdout, "\t unknown pixels = %d pixels = %.16f of all pixels\n", iUnknown, ((double) iUnknown)/iSize);
 	fprintf(stdout, "\t No unknown pixels ( zero) is a perfect target, but less then 1 %% of all pixels ( ratio < 0.01 ) is also OK ( acceptable)\n");
-	//
+	fprintf(stdout, " \n");
 	fprintf(stdout, "plane description\n");
 	fprintf(stdout, "\tplane center = %.16f %+0.16f\n",creal(plane_center), cimag(plane_center));
 	fprintf(stdout, "\tzoom = %.16e\n",zoom);
@@ -858,17 +858,18 @@ void PrintInfoAboutImage(const int k){
 	fprintf(stdout, "\tPixelWidth = %.16e   \n", PixelWidth); 
 	fprintf(stdout, "\txMin = %.16e \t xMax = %.16e\n",xMin, xMax); // 
 	fprintf(stdout, "\tyMin = %.16e \t yMax = %.16e\n",yMin, yMax); 
-	//
+	fprintf(stdout, " \n");
 	fprintf(stdout, "Last Iteration and interior detection, important parameters:\n");
 	fprintf(stdout, "\teps = %.16e\n",eps);
 	fprintf(stdout, "\tEscape Radius = ER = %.16e\n", ER);
 	fprintf(stdout, "\titerMax_LastIteration = %d\n", iterMax_LastIteration);
 	fprintf(stdout, "\tPixelWidth = %.16e   \n", PixelWidth); 
+	fprintf(stdout, " \n");
 	
-	//
 	PrintInfoAboutPixelSize(iPixelSpacingBits);
-	
+	fprintf(stdout, " \n");
 	printf("==========================================================================================================================\n\n\n\n");
+	fprintf(stdout, " \n");
 };
 
 
