@@ -12,6 +12,17 @@ How to describe hyperbolic component of Mandelbrot set ? ( escpecially [island](
 * orientation
 * distortion
 
+# To do
+
+For each island: 
+* find period 
+* find center of component ( nucleus)
+* find shape ( psudocircle or pseudocardioid)
+* find cusp of pseudorardioid
+* find root point between 2 main componnents
+* compute [distortion of the island](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/Mandelbrot_set/mset_distortion)
+
+
 
 # Example islands
 
@@ -27,6 +38,7 @@ Only main (pseudo)cardioid of period p  and main component of period 2p is drawn
 ```c
 #define kMax 12 // number of examples, see line 211 plane_examples
 
+// plane_center_x	plane_center_y	plane_radius	island_period
 double plane_examples[kMax][4] = {
 	{-0.4,		+0.0,		0.8,		1}, 
 	{+0.2925755,	-0.0149977, 	0.00025,	32}, 
