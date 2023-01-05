@@ -49,9 +49,12 @@ peroid = 1 = whole Mandelbrot set
 ![](./png/0_period_1_LastIteration.png "period = 1 = whole Mandelbrot set ") 
 
 
+Period 32 island
+
 ![](./png/1_period_32_LastIteration.png "description") 
 
 
+Period 3 island looks like whole Mandelbrot set  
 
 ![](./png/2_period_3_LastIteration.png "description") 
 
@@ -79,7 +82,7 @@ peroid = 1 = whole Mandelbrot set
 ![](./png/11_period_12_LastIteration.png "description") 
 
 
-
+More description is in the [output txt file m.txt](./src/cli/m.txt)
 
 # Algorithms
 * [atom domains for period  (= period domains) of Mandelbrot set hyperbolic components](https://commons.wikimedia.org/wiki/File:Mandelbrot_Atom_Domains_Animation.gif)
