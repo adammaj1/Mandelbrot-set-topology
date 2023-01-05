@@ -1,0 +1,266 @@
+File 0_period_1_LastIteration.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+This island (=  mini Mandelbrot set) is 0 example from plane_examples 
+	Period of main  (pseudo)cardioid is 1 
+	 unknown pixels = 5384 pixels = 0.0002243333333333 of all pixels
+	 No unknown pixels ( zero) is a perfect target, but less then 1 % of all pixels ( ratio < 0.01 ) is also OK
+plane description
+	plane center = -0.4000000000000000 +0.0000000000000000
+	zoom = 1.2500000000000000e+00
+	plane radius = 8.0000000000000004e-01
+	PixelWidth = 4.0006667777962998e-04   
+	xMin = -1.6000000000000001e+00 	 xMax = 8.0000000000000016e-01
+	yMin = -8.0000000000000004e-01 	 yMax = 8.0000000000000004e-01
+Last Iteration and interior detection, important parameters:
+	eps = 4.0006667777962995e-07
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	PixelWidth = 4.0006667777962998e-04   
+	pixel_spacing_bits = 11 	use float 
+==========================================================================================================================
+
+
+
+File 1_period_32_LastIteration.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+This island (=  mini Mandelbrot set) is 1 example from plane_examples 
+	Period of main  (pseudo)cardioid is 32 
+	 unknown pixels = 44197 pixels = 0.0018415416666667 of all pixels
+	 No unknown pixels ( zero) is a perfect target, but less then 1 % of all pixels ( ratio < 0.01 ) is also OK
+plane description
+	plane center = 0.2925755000000000 -0.0149977000000000
+	zoom = 4.0000000000000000e+03
+	plane radius = 2.5000000000000001e-04
+	PixelWidth = 1.2502083680613910e-07   
+	xMin = 2.9220049999999997e-01 	 xMax = 2.9295050000000000e-01
+	yMin = -1.5247699999999999e-02 	 yMax = -1.4747699999999999e-02
+Last Iteration and interior detection, important parameters:
+	eps = 1.2502083680613909e-10
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	PixelWidth = 1.2502083680613910e-07   
+	pixel_spacing_bits = 22 	use float 
+==========================================================================================================================
+
+
+
+File 2_period_3_LastIteration.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+This island (=  mini Mandelbrot set) is 2 example from plane_examples 
+	Period of main  (pseudo)cardioid is 3 
+	 unknown pixels = 17375 pixels = 0.0007239583333333 of all pixels
+	 No unknown pixels ( zero) is a perfect target, but less then 1 % of all pixels ( ratio < 0.01 ) is also OK
+plane description
+	plane center = -1.7629999999999999 +0.0000000000000000
+	zoom = 6.2500000000000000e+01
+	plane radius = 1.6000000000000000e-02
+	PixelWidth = 8.0013335555926061e-06   
+	xMin = -1.7869999999999999e+00 	 xMax = -1.7389999999999999e+00
+	yMin = -1.6000000000000000e-02 	 yMax = 1.6000000000000000e-02
+Last Iteration and interior detection, important parameters:
+	eps = 8.0013335555926058e-09
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	PixelWidth = 8.0013335555926061e-06   
+	pixel_spacing_bits = 16 	use float 
+==========================================================================================================================
+
+
+
+File 3_period_4_LastIteration.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+This island (=  mini Mandelbrot set) is 3 example from plane_examples 
+	Period of main  (pseudo)cardioid is 4 
+	 unknown pixels = 12383 pixels = 0.0005159583333333 of all pixels
+	 No unknown pixels ( zero) is a perfect target, but less then 1 % of all pixels ( ratio < 0.01 ) is also OK
+plane description
+	plane center = -0.1584200000000000 +1.0333500000000000
+	zoom = 1.0000000000000000e+02
+	plane radius = 1.0000000000000000e-02
+	PixelWidth = 5.0008334722453786e-06   
+	xMin = -1.7342000000000002e-01 	 xMax = -1.4341999999999999e-01
+	yMin = 1.0233500000000000e+00 	 yMax = 1.0433500000000000e+00
+Last Iteration and interior detection, important parameters:
+	eps = 5.0008334722453784e-09
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	PixelWidth = 5.0008334722453786e-06   
+	pixel_spacing_bits = 17 	use float 
+==========================================================================================================================
+
+
+
+File 4_period_5_LastIteration.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+This island (=  mini Mandelbrot set) is 4 example from plane_examples 
+	Period of main  (pseudo)cardioid is 5 
+	 unknown pixels = 14773 pixels = 0.0006155416666667 of all pixels
+	 No unknown pixels ( zero) is a perfect target, but less then 1 % of all pixels ( ratio < 0.01 ) is also OK
+plane description
+	plane center = 0.3584310000000000 +0.6435070000000001
+	zoom = 1.6666666666666666e+02
+	plane radius = 6.0000000000000001e-03
+	PixelWidth = 3.0005000833472271e-06   
+	xMin = 3.4943099999999999e-01 	 xMax = 3.6743100000000001e-01
+	yMin = 6.3750700000000005e-01 	 yMax = 6.4950700000000006e-01
+Last Iteration and interior detection, important parameters:
+	eps = 3.0005000833472270e-09
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	PixelWidth = 3.0005000833472271e-06   
+	pixel_spacing_bits = 18 	use float 
+==========================================================================================================================
+
+
+
+File 5_period_6_LastIteration.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+This island (=  mini Mandelbrot set) is 5 example from plane_examples 
+	Period of main  (pseudo)cardioid is 6 
+	 unknown pixels = 10320 pixels = 0.0004300000000000 of all pixels
+	 No unknown pixels ( zero) is a perfect target, but less then 1 % of all pixels ( ratio < 0.01 ) is also OK
+plane description
+	plane center = 0.4429900000000000 +0.3737270000000000
+	zoom = 2.0000000000000000e+02
+	plane radius = 5.0000000000000001e-03
+	PixelWidth = 2.5004167361226893e-06   
+	xMin = 4.3548999999999999e-01 	 xMax = 4.5049000000000000e-01
+	yMin = 3.6872699999999997e-01 	 yMax = 3.7872699999999998e-01
+Last Iteration and interior detection, important parameters:
+	eps = 2.5004167361226892e-09
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	PixelWidth = 2.5004167361226893e-06   
+	pixel_spacing_bits = 18 	use float 
+==========================================================================================================================
+
+
+
+File 6_period_7_LastIteration.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+This island (=  mini Mandelbrot set) is 6 example from plane_examples 
+	Period of main  (pseudo)cardioid is 7 
+	 unknown pixels = 15424 pixels = 0.0006426666666667 of all pixels
+	 No unknown pixels ( zero) is a perfect target, but less then 1 % of all pixels ( ratio < 0.01 ) is also OK
+plane description
+	plane center = 0.4322590000000000 +0.2273150000000000
+	zoom = 3.3333333333333331e+02
+	plane radius = 3.0000000000000001e-03
+	PixelWidth = 1.5002500416736135e-06   
+	xMin = 4.2775900000000000e-01 	 xMax = 4.3675900000000001e-01
+	yMin = 2.2431499999999999e-01 	 yMax = 2.3031499999999999e-01
+Last Iteration and interior detection, important parameters:
+	eps = 1.5002500416736135e-09
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	PixelWidth = 1.5002500416736135e-06   
+	pixel_spacing_bits = 19 	use float 
+==========================================================================================================================
+
+
+
+File 7_period_8_LastIteration.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+This island (=  mini Mandelbrot set) is 7 example from plane_examples 
+	Period of main  (pseudo)cardioid is 8 
+	 unknown pixels = 19436 pixels = 0.0008098333333333 of all pixels
+	 No unknown pixels ( zero) is a perfect target, but less then 1 % of all pixels ( ratio < 0.01 ) is also OK
+plane description
+	plane center = 0.4048790000000000 +0.1462160000000000
+	zoom = 5.0000000000000000e+02
+	plane radius = 2.0000000000000000e-03
+	PixelWidth = 1.0001666944490758e-06   
+	xMin = 4.0187899999999999e-01 	 xMax = 4.0787899999999999e-01
+	yMin = 1.4421600000000001e-01 	 yMax = 1.4821600000000001e-01
+Last Iteration and interior detection, important parameters:
+	eps = 1.0001666944490757e-09
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	PixelWidth = 1.0001666944490758e-06   
+	pixel_spacing_bits = 19 	use float 
+==========================================================================================================================
+
+
+
+File 8_period_9_LastIteration.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+This island (=  mini Mandelbrot set) is 8 example from plane_examples 
+	Period of main  (pseudo)cardioid is 9 
+	 unknown pixels = 46512 pixels = 0.0019380000000000 of all pixels
+	 No unknown pixels ( zero) is a perfect target, but less then 1 % of all pixels ( ratio < 0.01 ) is also OK
+plane description
+	plane center = 0.3786310000000000 +0.0988410000000000
+	zoom = 1.0000000000000000e+03
+	plane radius = 1.0000000000000000e-03
+	PixelWidth = 5.0008334722453788e-07   
+	xMin = 3.7713099999999999e-01 	 xMax = 3.8013100000000000e-01
+	yMin = 9.7840999999999997e-02 	 yMax = 9.9840999999999999e-02
+Last Iteration and interior detection, important parameters:
+	eps = 5.0008334722453786e-10
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	PixelWidth = 5.0008334722453788e-07   
+	pixel_spacing_bits = 20 	use float 
+==========================================================================================================================
+
+
+
+File 9_period_10_LastIteration.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+This island (=  mini Mandelbrot set) is 9 example from plane_examples 
+	Period of main  (pseudo)cardioid is 10 
+	 unknown pixels = 28112 pixels = 0.0011713333333333 of all pixels
+	 No unknown pixels ( zero) is a perfect target, but less then 1 % of all pixels ( ratio < 0.01 ) is also OK
+plane description
+	plane center = 0.3568540000000000 +0.0696590000000000
+	zoom = 1.0000000000000000e+03
+	plane radius = 1.0000000000000000e-03
+	PixelWidth = 5.0008334722453788e-07   
+	xMin = 3.5535400000000000e-01 	 xMax = 3.5835400000000001e-01
+	yMin = 6.8658999999999998e-02 	 yMax = 7.0659000000000000e-02
+Last Iteration and interior detection, important parameters:
+	eps = 5.0008334722453786e-10
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	PixelWidth = 5.0008334722453788e-07   
+	pixel_spacing_bits = 20 	use float 
+==========================================================================================================================
+
+
+
+File 10_period_11_LastIteration.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+This island (=  mini Mandelbrot set) is 10 example from plane_examples 
+	Period of main  (pseudo)cardioid is 11 
+	 unknown pixels = 17684 pixels = 0.0007368333333333 of all pixels
+	 No unknown pixels ( zero) is a perfect target, but less then 1 % of all pixels ( ratio < 0.01 ) is also OK
+plane description
+	plane center = 0.3394540000000000 +0.0508230000000000
+	zoom = 1.0000000000000000e+03
+	plane radius = 1.0000000000000000e-03
+	PixelWidth = 5.0008334722453788e-07   
+	xMin = 3.3795399999999998e-01 	 xMax = 3.4095399999999998e-01
+	yMin = 4.9822999999999999e-02 	 yMax = 5.1823000000000001e-02
+Last Iteration and interior detection, important parameters:
+	eps = 5.0008334722453786e-10
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	PixelWidth = 5.0008334722453788e-07   
+	pixel_spacing_bits = 20 	use float 
+==========================================================================================================================
+
+
+
+File 11_period_12_LastIteration.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+This island (=  mini Mandelbrot set) is 11 example from plane_examples 
+	Period of main  (pseudo)cardioid is 12 
+	 unknown pixels = 11520 pixels = 0.0004800000000000 of all pixels
+	 No unknown pixels ( zero) is a perfect target, but less then 1 % of all pixels ( ratio < 0.01 ) is also OK
+plane description
+	plane center = 0.3256310000000000 +0.0381640000000000
+	zoom = 1.0000000000000000e+03
+	plane radius = 1.0000000000000000e-03
+	PixelWidth = 5.0008334722453788e-07   
+	xMin = 3.2413100000000000e-01 	 xMax = 3.2713100000000001e-01
+	yMin = 3.7163999999999996e-02 	 yMax = 3.9163999999999997e-02
+Last Iteration and interior detection, important parameters:
+	eps = 5.0008334722453786e-10
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	PixelWidth = 5.0008334722453788e-07   
+	pixel_spacing_bits = 20 	use float 
+==========================================================================================================================
+
+
+
+ 
+gcc version: 11.3.0
