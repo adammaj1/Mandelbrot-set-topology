@@ -60,6 +60,10 @@ peroid = 1 = whole Mandelbrot set
 
 ![](./png/0_period_1_LastIteration.png "period = 1 = whole Mandelbrot set ") 
 
+Here unknown pixels are marked by red big pixels
+
+![](./png/0_period_1_LastIteration_unknown.png "period = 1 = whole Mandelbrot set with unknown pixels marked red ") 
+
 
 Period 32 island
 
