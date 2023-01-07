@@ -69,7 +69,8 @@ Period 16 island
 
 ![](./png/1_period_32_LastIteration.png "description") 
 
-Here are 2 main components : period 16 pseudocardioid and period 2*16 pseudocircle. Note that the image differs from that computed with LastIteration method ( above). The components are smaller and do not touch
+Here are 2 main components : period 16 pseudocardioid and period 2*16 pseudocircle. Note that the image differs from that computed with LastIteration method ( above). 
+The components are smaller and do not touch in root points
 
 ![](./png/1_107.png "description") 
 
@@ -107,6 +108,15 @@ Period 3 island looks like whole Mandelbrot set
 
 
 More description is in the [output txt file m.txt](./src/cli/m.txt)
+
+
+# Files
+* [m.c](./src/cli/m.c) - one file c program
+* [m.sh](./src/cli/m.sh) - bash file used to compile, run the m.c and image manipulations using ImageMagic console programs
+* [Makefile](./src/cli/Makefile) file for make which runs all
+* [output txt file m.txt](./src/cli/m.txt) - to read about the results
+* [images are in the png directory](./png/) 
+
 
 # Algorithms
 * [atom domains for period  (= period domains) of Mandelbrot set hyperbolic components](https://commons.wikimedia.org/wiki/File:Mandelbrot_Atom_Domains_Animation.gif)
