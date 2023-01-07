@@ -41,7 +41,7 @@ Only main (pseudo)cardioid of period p  and main component of period 2p is drawn
 // plane_center_x	plane_center_y	plane_radius	island_period
 double plane_examples[kMax][4] = {
 	{-0.4,		+0.0,		0.8,		1}, 
-	{+0.2925755,	-0.0149977, 	0.00025,	32}, 
+	{+0.2925755,	-0.0149977, 	0.00025,	16}, 
 	{-1.763,  	+0.0,		0.016,		3}, 
 	{-0.15842, 	+1.03335, 	0.01,		4},  
 	{+0.358431,	+ 0.643507,	0.006,		5},  
@@ -60,14 +60,22 @@ peroid = 1 = whole Mandelbrot set
 
 ![](./png/0_period_1_LastIteration.png "period = 1 = whole Mandelbrot set ") 
 
-Here unknown pixels are marked by red big pixels
+Here unknown pixels are marked by red big pixels. They are boundary points. 
 
 ![](./png/0_period_1_LastIteration_unknown.png "period = 1 = whole Mandelbrot set with unknown pixels marked red ") 
 
 
-Period 32 island
+Period 16 island
 
 ![](./png/1_period_32_LastIteration.png "description") 
+
+Here are 2 main components : period 16 pseudocardioid and period 2*16 pseudocircle. Note that the image differs from that computed with LastIteration method ( above). The components are smaller
+
+![](./png/1_107.png "description") 
+
+Here is comparison using ImageMagic ( [see bash file](./src/cli/m.sh))
+
+![](./png/diff1.png "description") 
 
 
 Period 3 island looks like whole Mandelbrot set  
