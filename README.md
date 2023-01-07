@@ -56,7 +56,7 @@ double plane_examples[kMax][4] = {
 };
 ```
 
-peroid = 1 = whole Mandelbrot set  
+peroid = 1 = whole Mandelbrot set  ( using LastIterarion method with interior detection)
 
 ![](./png/0_period_1_LastIteration.png "period = 1 = whole Mandelbrot set ") 
 
@@ -69,7 +69,7 @@ Period 16 island
 
 ![](./png/1_period_32_LastIteration.png "description") 
 
-Here are 2 main components : period 16 pseudocardioid and period 2*16 pseudocircle. Note that the image differs from that computed with LastIteration method ( above). The components are smaller
+Here are 2 main components : period 16 pseudocardioid and period 2*16 pseudocircle. Note that the image differs from that computed with LastIteration method ( above). The components are smaller and do not touch
 
 ![](./png/1_107.png "description") 
 
