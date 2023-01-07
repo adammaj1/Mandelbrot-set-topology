@@ -27,13 +27,9 @@ For each island:
 # Example islands
 
 Here are few examples of [islands](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/island_t). 
-
-
-
-
-
-
-Only main (pseudo)cardioid of period p  and main component of period 2p is drawn
+* first image ( LastIteration = 108):  shows interior points
+* second image (Period = 107): Only main (pseudo)cardioid of period p  and main component of period 2p is drawn 
+* for more description see the [output txt file m.txt](./src/cli/m.txt)
 
 ```c
 #define kMax 12 // number of examples, see line 211 plane_examples
@@ -55,7 +51,7 @@ double plane_examples[kMax][4] = {
 	 
 };
 ```
-
+## Period 1
 peroid = 1 = whole Mandelbrot set  ( using LastIterarion method with interior detection)
 
 ![](./png/0_period_1_LastIteration.png "period = 1 = whole Mandelbrot set ") 
@@ -64,8 +60,9 @@ Here unknown pixels are marked by red big pixels. They are boundary points.
 
 ![](./png/0_period_1_LastIteration_unknown.png "period = 1 = whole Mandelbrot set with unknown pixels marked red ") 
 
+![](./png/0_107.png "description") 
 
-Period 16 island
+## Period 16 island
 
 ![](./png/1_period_32_LastIteration.png "description") 
 
@@ -78,36 +75,55 @@ Here is comparison using ImageMagic ( [see bash file](./src/cli/m.sh))
 
 ![](./png/diff1.png "description") 
 
+## Period 3
 
 Period 3 island looks like whole Mandelbrot set  
 
 ![](./png/2_period_3_LastIteration.png "description") 
 
+![](./png/2_107.png "description") 
+
+## Period 4
 
 ![](./png/3_period_4_LastIteration.png "description") 
 
+![](./png/3_107.png "description") 
 
+## Period 5
 ![](./png/4_period_5_LastIteration.png "description") 
 
+![](./png/4_107.png "description") 
+
+## Period 6
 
 ![](./png/5_period_6_LastIteration.png "description") 
 
-
+## Period 7
 ![](./png/6_period_7_LastIteration.png "description") 
 
-
+## Period 8
 ![](./png/7_period_8_LastIteration.png "description") 
+
+## Period 9
 
 ![](./png/8_period_9_LastIteration.png "description") 
 
+## Period 10
+
 ![](./png/9_period_10_LastIteration.png "description") 
 
-![](./png/10_period_11_LastIteration.png "description") 
+## Period 11
+
+![](./png/10_period_11_LastIteration.png "description")
+
+## Period 12 
 
 ![](./png/11_period_12_LastIteration.png "description") 
 
+![](./png/11_107.png "description") 
 
-More description is in the [output txt file m.txt](./src/cli/m.txt)
+
+
 
 
 # Files
@@ -136,7 +152,7 @@ More description is in the [output txt file m.txt](./src/cli/m.txt)
 * [raster graphic](https://en.wikipedia.org/wiki/Raster_graphics)
 * computer graphic
 * [binary image](https://en.wikipedia.org/wiki/Binary_image)
-
+* [Connected-component labeling](https://en.wikipedia.org/wiki/Connected-component_labeling)
 
 
 
