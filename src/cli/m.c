@@ -89,6 +89,7 @@
 #include <string.h>		// strcat
 #include <math.h>		// M_PI; needs -lm also
 #include <complex.h> 		// complex numbers : https://stackoverflow.com/questions/6418807/how-to-work-with-complex-numbers-in-c
+#include <stdbool.h>
 #include <omp.h>		// OpenMP
 
 
@@ -135,6 +136,7 @@ typedef enum  {
 			BET = 106,
 			Period = 107,
 			LastIteration = 108,
+			AtomDomains = 109,
 			SAC, 
 			DLD, 
 			ND, 
@@ -148,16 +150,16 @@ typedef enum  {
 // virtual 2D array and integer ( screen) coordinate
 // Indexes of array starts from 0 not 1 
 //unsigned int ix, iy; // var
-static unsigned int ixMin = 0;	// Indexes of array starts from 0 not 1
-static unsigned int ixMax;	//
-static unsigned int iWidth;	// horizontal dimension of array
+static int ixMin = 0;	// Indexes of array starts from 0 not 1
+static int ixMax;	//
+static int iWidth;	// horizontal dimension of array
 
-static unsigned int iyMin = 0;	// Indexes of array starts from 0 not 1
-static unsigned int iyMax;	//
+static int iyMin = 0;	// Indexes of array starts from 0 not 1
+static int iyMax;	//
 
-static unsigned int iHeight = 4000;	//  
+static int iHeight = 4000;	//  
 // The size of array has to be a positive constant integer 
-static unsigned int iSize;	// = iWidth*iHeight; 
+static int iSize;	// = iWidth*iHeight; 
 
 
 // ----------memmory 1D arrays ==================
@@ -169,7 +171,7 @@ unsigned char *edge;
 
 // unsigned int i; // var = index of 1D array
 //static unsigned int iMin = 0; // Indexes of array starts from 0 not 1
-static unsigned int iMax;	// = i2Dsize-1  = 
+static int iMax;	// = i2Dsize-1  = 
 // The size of array has to be a positive constant integer 
 // unsigned int i1Dsize ; // = i2Dsize  = (iMax -iMin + 1) =  ;  1D array with the same size as 2D array
 
@@ -219,7 +221,7 @@ https://mrob.com/pub/mu-data/largest-islands.txt
 */
 double plane_examples[kMax][4] = {
 	{-0.4,		+0.0,		0.8,		1}, 
-	{+0.2925755,	-0.0149977, 	0.00025,	32}, 
+	{+0.2925755,	-0.0149977, 	0.00025,	16}, 
 	{-1.763,  	+0.0,		0.016,		3}, 
 	{-0.15842, 	+1.03335, 	0.01,		4},  
 	{+0.358431,	+ 0.643507,	0.006,		5},  
@@ -267,7 +269,7 @@ int iExterior = 0;
 /* colors = shades of gray from 0 to 255 */
 unsigned char iColorOfExterior 		= 255;
 unsigned char iColorOfInterior 		= 150;
-unsigned char iColorOfPseudoCardioid 	= 120;
+unsigned char iColorOfPseudoCardioid 	= 150;
 unsigned char iColorOfMainBulb 		= 150;
 unsigned char iColorOfBoundary 		= 0;
 unsigned char iColorOfUnknown 		= 30;
@@ -313,6 +315,28 @@ double Give_x (const int ix)
 
 //------------------complex numbers -----------------------------------------------------
 
+
+
+
+static inline int sgn(double z) {
+  if (z > 0) { return  1; }
+  if (z < 0) { return -1; }
+  return 0;
+}
+
+static inline bool odd(int a) {
+  return a & 1;
+}
+
+
+static inline bool cisfinite(double _Complex z) {
+  return isfinite(creal(z)) && isfinite(cimag(z));
+}
+
+
+
+
+
  double cabs2(complex double z) {
   return creal(z) * creal(z) + cimag(z) * cimag(z);
 }
@@ -332,6 +356,17 @@ int escapes(complex double z){
 	return 0; // not escapes
 
 }
+
+/* -----------  array functions = drawing -------------- */
+
+/* gives position of 2D point (ix,iy) in 1D array  ; uses also global variable iWidth */
+unsigned int Give_i (const int ix, const int iy)
+{
+  return ix + iy * iWidth;
+}
+
+
+
 
 
 // ***************************************************************************************************************************
@@ -391,7 +426,74 @@ unsigned char ComputeColorOf_last_iteration(complex double c){
 
  
 
+// ***************************************************************************************************************************
+// ************************** Atom domains  *****************************************
+// ****************************************************************************************************************************
 
+
+int atom_domains( double _Complex c, int nMax)
+{
+  double _Complex z = c;
+  //int nMax = 100;
+  const double infinity = 1.0 / 0.0;
+  complex double dc = 0;
+  
+   double minimum_z2 = infinity; // atom domain
+   int period = 0;
+
+      // iteration 
+      for (int n = 1; n <= nMax; ++n) {
+        dc = 2 * z * dc + 1;
+        z = z * z + c;
+        double z2 = cabs2(z);
+
+        if (z2 < minimum_z2) {
+          minimum_z2 = z2;
+          period = n;}}
+          
+    return period;
+  
+  
+  
+  
+}
+
+
+
+
+/* show only 2 xomponent of the island : main pseudocardioid and it's main bulb */
+unsigned char ComputeColorOf_atom_domains(const int period_of_pseudocardioid, complex double c){
+
+	unsigned char color;
+	int last_iteration = give_last_iteration(c);
+	int period = atom_domains(c,1);
+	
+	
+   	if (last_iteration > 0)
+   		{ color = iColorOfExterior; }
+   		else {
+   			if (last_iteration < 0) 
+   				{ 
+   					if (period == period_of_pseudocardioid)
+   						{color = iColorOfPseudoCardioid ;}
+   						else { if (period == 2*period_of_pseudocardioid)
+   								{color= iColorOfMainBulb; }
+   						
+   						}
+   				
+   				 }
+   				else {color = iColorOfUnknown;} // i ==0
+		}	
+   	
+		
+	
+	return color;
+
+
+}
+
+
+ 
 
 
 
@@ -402,12 +504,116 @@ unsigned char ComputeColorOf_last_iteration(complex double c){
 // ****************************************************************************************************************************
 
 
-int GivePeriod (const double complex c ){
+
+
+//****************************************************************
+//**************** Box period *************************************
+//*****************************************************************
+
+
+
+static double cross(double _Complex a, double _Complex b) {
+  return cimag(a) * creal(b) - creal(a) * cimag(b);
+}
+
+static bool crosses_positive_real_axis(double _Complex a, double _Complex b) {
+  if (sgn(cimag(a)) != sgn(cimag(b))) {
+    double _Complex d = b - a;
+    int s = sgn(cimag(d));
+    int t = sgn(cross(d, a));
+    return s == t;
+  }
+  return false;
+}
+
+static bool surrounds_origin(double _Complex a, double _Complex b, double _Complex c, double _Complex d) {
+  return odd
+    ( crosses_positive_real_axis(a, b)
+    + crosses_positive_real_axis(b, c)
+    + crosses_positive_real_axis(c, d)
+    + crosses_positive_real_axis(d, a)
+    );
+}
+
+typedef struct  {
+  double _Complex c[4];
+  double _Complex z[4];
+  int p;
+} m_d_box_period ;
+
+
+m_d_box_period *m_d_box_period_new(double _Complex center, double radius) {
+  m_d_box_period *box = (m_d_box_period *) malloc(sizeof(*box));
+  if (! box) {
+    return 0;
+  }
+  box->z[0] = box->c[0] = center + ((-radius) + I * (-radius));
+  box->z[1] = box->c[1] = center + (( radius) + I * (-radius));
+  box->z[2] = box->c[2] = center + (( radius) + I * ( radius));
+  box->z[3] = box->c[3] = center + ((-radius) + I * ( radius));
+  box->p = 1;
+  return box;
+}
+
+void m_d_box_period_delete(m_d_box_period *box) {
+  if (box) {
+    free(box);
+  }
+}
+
+bool m_d_box_period_step(m_d_box_period *box) {
+  if (! box) {
+    return false;
+  }
+  bool ok = true;
+  for (int i = 0; i < 4; ++i) {
+    box->z[i] = box->z[i] * box->z[i] + box->c[i];
+    ok = ok && cisfinite(box->z[i]);
+  }
+  box->p = box->p + 1;
+  return ok;
+}
+
+bool m_d_box_period_have_period(const m_d_box_period *box) {
+  if (! box) {
+    return true;
+  }
+  return surrounds_origin(box->z[0], box->z[1], box->z[2], box->z[3]);
+}
+
+int m_d_box_period_get_period(const m_d_box_period *box) {
+  if (! box) {
+    return 0;
+  }
+  return box->p;
+}
+
+int m_d_box_period_do(double _Complex center, double radius, int maxperiod) {
+  m_d_box_period *box = m_d_box_period_new(center, radius);
+  if (! box) {
+    return 0;
+  }
+  int period = 0;
+  for (int i = 0; i < maxperiod; ++i) {
+    if (m_d_box_period_have_period(box)) {
+      period = m_d_box_period_get_period(box);
+      break;
+    }
+    if (! m_d_box_period_step(box)) {
+      break;
+    }
+  }
+  m_d_box_period_delete(box);
+  return period;
+}
+
+
+int GivePeriodByIteration (const double complex c ){
 
 	// int period = 0;
-	int iMax = 10000;
+	int iMax = 2000;
 	int i;
-	complex double orbit[10001]; // length(orbit) = iMax + 1
+	complex double orbit[2001]; // length(orbit) = iMax + 1
 	complex double z = 0.0; // critical point
 	
 	
@@ -435,8 +641,10 @@ int GivePeriod (const double complex c ){
 	// go from the last point of the orbit 
 	//z = orbit[0];
 	for(i=iMax-1; i>0; --i){
-		if ( SameValue(z, orbit[i]) ) { return iMax - i;} // period
-			
+		if ( SameValue( z, orbit[i]))
+			{//printf(" z = %f+%f diff = %e\n", creal(orbit[i]), cimag(orbit[i]), cabs(z - orbit[i])); 
+			return iMax - i;} // period
+			//else printf(" z = %f+%f diff = %e\n", creal(orbit[i]), cimag(orbit[i]), cabs(z - orbit[i]));
 	
 	
 	
@@ -450,7 +658,30 @@ int GivePeriod (const double complex c ){
 }
 
 
-/* show only 2 xomponent of the island : main pseudocardioid and it's main bulb */
+
+int GivePeriod(complex double c){
+
+
+
+
+	if (cabs2(c)>4.0) {return 0;} // exterior
+	if (cabs2(1.0 - csqrt(1.0-4.0*c))<=1.0 ) {return 1;} // main cardioid
+	if (cabs2(4.0*c + 4)<=1.0){return 2;} // period 2 component
+	
+	int period =  GivePeriodByIteration(c); 
+	//period = m_d_box_period_do(c, 0.5, iterMax_LastIteration);
+	
+
+
+	return period; // period not found
+
+}
+
+
+
+
+
+/* show only 2 component of the island : main pseudocardioid and it's main bulb */
 unsigned char ComputeColorOf_Period(const int period_of_pseudocardioid,  complex double c){
 
 	unsigned char color;
@@ -474,13 +705,6 @@ unsigned char ComputeColorOf_Period(const int period_of_pseudocardioid,  complex
 
 
 
-/* -----------  array functions = drawing -------------- */
-
-/* gives position of 2D point (ix,iy) in 1D array  ; uses also global variable iWidth */
-unsigned int Give_i (const int ix, const int iy)
-{
-  return ix + iy * iWidth;
-}
 
 
 // ***********************************************************************************************
@@ -491,8 +715,8 @@ unsigned int Give_i (const int ix, const int iy)
 int ComputeBoundaries(const unsigned char S[], unsigned char D[])
 {
  
-  unsigned int iX,iY; /* indices of 2D virtual array (image) = integer coordinate */
-  unsigned int i; /* index of 1D array  */
+  int iX,iY; /* indices of 2D virtual array (image) = integer coordinate */
+  int i; /* index of 1D array  */
   /* sobel filter */
   unsigned char G, Gh, Gv; 
   // boundaries are in D  array ( global var )
@@ -524,8 +748,8 @@ int ComputeBoundaries(const unsigned char S[], unsigned char D[])
 int CopyBoundaries(const unsigned char S[],  unsigned char D[])
 {
  
-  unsigned int iX,iY; /* indices of 2D virtual array (image) = integer coordinate */
-  unsigned int i; /* index of 1D array  */
+  int iX,iY; /* indices of 2D virtual array (image) = integer coordinate */
+  int i; /* index of 1D array  */
  
  
   fprintf(stderr, "\tcopy boundaries from S array to D array \n");
@@ -555,7 +779,7 @@ unsigned char ComputeColor(const int period_of_pseudocardioid, const Representat
 	
 		
 		
-		
+		case AtomDomains : {iColor = ComputeColorOf_atom_domains(period_of_pseudocardioid, c); break;}
 		case LastIteration : 	{iColor = ComputeColorOf_last_iteration(c); 			break;}
 		case Period: 		{iColor = ComputeColorOf_Period(period_of_pseudocardioid,  c); 	break;}
 		
@@ -590,7 +814,7 @@ int DrawPoint (const int period, const RepresentationFunctionTypeT Representatio
 	
 	
 	unsigned char iColor = GiveColor(period,  RepresentationFunctionType,  ix, iy);
-	unsigned int i = Give_i (ix, iy);	/* compute index of 1D array from indices of 2D array */
+	int i = Give_i (ix, iy);	/* compute index of 1D array from indices of 2D array */
     	A[i] = iColor ; // 
   
   	return 0;
@@ -604,13 +828,13 @@ int DrawPoint (const int period, const RepresentationFunctionTypeT Representatio
 // scanning complex plane 
 int DrawImage (const int k, const RepresentationFunctionTypeT RepresentationFunctionType,   unsigned char A[])
 {
-  	unsigned int ix, iy;		// pixel coordinate 
+  	int ix, iy;		// pixel coordinate 
   	
   	const int period = (int) plane_examples[k][3];
   	
   	
 
-  	fprintf(stderr, "compute image %d RepresentationFunctionType = %d \t  \n", k, RepresentationFunctionType);
+  	fprintf(stderr, "compute example image %d RepresentationFunctionType = %d period = %d  \n", k, RepresentationFunctionType, period);
  	// for all pixels of image 
 	#pragma omp parallel for schedule(dynamic,1) private(ix,iy) shared(A, ixMax , iyMax)
 	// #pragma omp parallel for schedule(dynamic, 1)
@@ -644,7 +868,7 @@ int SaveImage(const unsigned char A[], const char *shortName )
 {
 
   FILE *fp;
-  const unsigned int MaxColorComponentValue = 255;	/* color component is coded from 0 to 255 ;  it is 8 bit color file */
+  const int MaxColorComponentValue = 255;	/* color component is coded from 0 to 255 ;  it is 8 bit color file */
   
   
   
@@ -664,12 +888,12 @@ int SaveImage(const unsigned char A[], const char *shortName )
 
   // save image array to the pgm file 
   fp = fopen (fileName, "wb");	// create new file,give it a name and open it in binary mode 
-  fprintf (fp, "P5\n # %s\n %u %u\n %u\n", long_comment, iWidth, iHeight, MaxColorComponentValue);	// write header to the file
+  fprintf (fp, "P5\n # %s\n %d %d\n %d\n", long_comment, iWidth, iHeight, MaxColorComponentValue);	// write header to the file
   size_t rSize = fwrite (A, sizeof(A[0]), iSize, fp);	// write whole array with image data bytes to the file in one step 
   fclose (fp);
 
   // info 
-  if ( rSize == iSize) 
+  if ( rSize == (long unsigned int) iSize) 
   	{
   		printf ("File %s saved ", fileName);
   		if (long_comment == NULL || strlen (long_comment) == 0)
@@ -798,11 +1022,11 @@ int setup()
 
 
 
-const char* GiveName(const int k,  const char* sName)
+const char* GiveName(const int k, const RepresentationFunctionTypeT RepresentationFunctionType)
 {
 	static char Name[512];
-	// NoOfExample_period_p_sName
-    	sprintf(Name,"%d_period_%d_%s", k, (int) plane_examples[k][3], sName);
+	// NoOfExample_RepresentationFunctionType                   period_p_sName
+    	sprintf(Name,"%d_%d", k, RepresentationFunctionType) ; //(int) plane_examples[k][3], sName);
 
     	return Name;
 }
@@ -886,7 +1110,7 @@ int MakeImages( const int k){
 	local_setup(k); // for every k 
 	
 	DrawImage(k, LastIteration,   data); // all the periods 
-	Name = GiveName(k, "LastIteration");
+	Name = GiveName(k, LastIteration);
 	SaveImage(data, Name); 
 
 	/*
@@ -903,7 +1127,18 @@ int MakeImages( const int k){
 	DrawImage(k, LSM,   data);
 	Name = GiveName(k, LSM, "LSM");
 	SaveImage(data, Name); 
+	
+	
+	
+	DrawImage(k, AtomDomains, data); // all the periods 
+	Name = GiveName(k, "AtomDomains");
+	SaveImage(data, Name); 
 	*/
+	DrawImage(k, Period, data); // all the periods 
+	Name = GiveName(k, Period);
+	SaveImage(data, Name); 
+	
+	
 	
 	//pseudo_cardioid_center = GiveCenter((int) plane_examples[k][3], data);
 	

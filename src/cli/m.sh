@@ -47,8 +47,11 @@ printf "delete all pgm files \n"
 rm ./*.pgm
 
 
-
-
+printf "compare images using ImageMagic"
+for k in {0..11}
+do
+  compare "$k"_108.png "$k"_107.png -compose src diff"$k".png
+done
  
 echo OK
 
