@@ -121,7 +121,6 @@ More description is in the [output txt file m.txt](./src/cli/m.txt)
 # Algorithms
 * [atom domains for period  (= period domains) of Mandelbrot set hyperbolic components](https://commons.wikimedia.org/wiki/File:Mandelbrot_Atom_Domains_Animation.gif)
 * period of Mandelbrot set hyperbolic componnets
-* Boolean Escape Time = BET 
 * [multiplier map](https://commons.wikimedia.org/wiki/File:Mandelbrot_set_-_multiplier_map.png)
 * [interior detection](https://commons.wikimedia.org/wiki/File:Mandelbrot_set_with_Interior_detection_method.png)
 * [The Lyapunov exponent](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/Mandelbrot_set_interior)
@@ -136,6 +135,7 @@ More description is in the [output txt file m.txt](./src/cli/m.txt)
 * 2D 
 * [raster graphic](https://en.wikipedia.org/wiki/Raster_graphics)
 * computer graphic
+* [binary image](https://en.wikipedia.org/wiki/Binary_image)
 
 
 
