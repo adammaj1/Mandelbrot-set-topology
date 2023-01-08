@@ -75,9 +75,16 @@ Here is comparison using ImageMagic ( [see bash file](./src/cli/m.sh))
 
 ![](./png/diff1.png "description") 
 
-Here is a comparison between boundaries of LastIterarion method and Period method. The difference is big.
+Here is a comparison between boundaries of LastIterarion method and Period method. The difference is big. It was caused by to low value of iMax = 2000; ( see function GivePeriodByIteration line 676 )
 
 ![](./png/1_111.png "description") 
+
+After increasing iMax (10 000 and 50 000) ( and orbit[OrbitLength]; // length(orbit) = iMax + 1 ) new image looks better 
+
+![](./png/1_111_10000.png "description") 
+
+![](./png/1_111_50000.png "description") 
+
 
 ## Period 3
 
