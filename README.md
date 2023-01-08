@@ -10,7 +10,7 @@ How to describe hyperbolic component of Mandelbrot set ? ( escpecially [island](
 * angles of external rays that land on cusp of the pseudocardiod
 * size of main pseudocardioid
 * orientation
-* distortion
+* [distortion](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/Mandelbrot_set/mset_distortion)
 
 # To do
 
@@ -74,6 +74,10 @@ The components are smaller and do not touch in root points
 Here is comparison using ImageMagic ( [see bash file](./src/cli/m.sh))
 
 ![](./png/diff1.png "description") 
+
+Here is a comparison between boundaries of LastIterarion method and Period method. The difference is big.
+
+![](./png/1.111.png "description") 
 
 ## Period 3
 
@@ -141,8 +145,9 @@ Period 3 island looks like whole Mandelbrot set
 * [interior detection](https://commons.wikimedia.org/wiki/File:Mandelbrot_set_with_Interior_detection_method.png)
 * [The Lyapunov exponent](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/Mandelbrot_set_interior)
 * [Interior distance estimation](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/demm#Interior_distance_estimation) - DEM 
-
-
+* [rendering-mandelbrot-set-mu-units](https://fractalforums.org/code-snippets-fragments/74/rendering-mandelbrot-set-mu-units/3485): How to extract a mu-unit of a given period using distance estimation colouring, pruning off the outer filaments?
+* [mu-atom ](https://mathr.co.uk/mandelbrot/mu-atom/) - mu-atom mapping: period p hyperbolic components of the Mandelbrot set can each be mapped conformally to the unit disc, by the derivative d/dz of the periodic limit cycle where f_c^p(z_0) = z_0.
+* [period-doubling-in-minibrots](https://fractalforums.org/noobs-corner/76/period-doubling-in-minibrots/3990)
 
 # Key words
 * [distortion](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/Mandelbrot_set/mset_distortion)
