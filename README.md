@@ -77,7 +77,7 @@ Here is comparison using ImageMagic ( [see bash file](./src/cli/m.sh))
 
 Here is a comparison between boundaries of LastIterarion method and Period method. The difference is big.
 
-![](./png/1.111.png "description") 
+![](./png/1_111.png "description") 
 
 ## Period 3
 
