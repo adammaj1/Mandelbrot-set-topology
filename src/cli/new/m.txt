@@ -1,0 +1,362 @@
+	File 0_112.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 0_101.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 0_113.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 0_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+ 
+This island (=  mini Mandelbrot set) is 0 example from plane_examples 
+	Period of main  (pseudo)cardioid is 1 
+	pseudocardioid_nucleus = 0.0000000000000000 +0.0000000000000000
+	second_bulb_nucleus = -1.0000000000000000 +0.0000000000000000
+plane description
+	plane center = -0.4000000000000000 +0.0000000000000000
+	zoom = 1.2500000000000000e+00
+	plane radius = 8.0000000000000004e-01
+	PixelWidth = 4.0006667777962998e-04   
+	xMin = -1.6000000000000001e+00 	 xMax = 8.0000000000000016e-01
+	yMin = -8.0000000000000004e-01 	 yMax = 8.0000000000000004e-01
+ 
+Important parameters:
+	eps = 4.0006667777962996e-06
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	PixelWidth = 4.0006667777962998e-04   
+	pixel_spacing_bits = 11 	use float 
+ 
+ 
+==========================================================================================================================
+
+
+
+ 
+	File 1_112.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 1_101.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 1_113.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 1_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+ 
+This island (=  mini Mandelbrot set) is 1 example from plane_examples 
+	Period of main  (pseudo)cardioid is 16 
+	pseudocardioid_nucleus = 0.2925037532341934 -0.0149250689983438
+	second_bulb_nucleus = 0.2926480050973883 -0.0150278865552610
+plane description
+	plane center = 0.2925755000000000 -0.0149977000000000
+	zoom = 4.0000000000000000e+03
+	plane radius = 2.5000000000000001e-04
+	PixelWidth = 1.2502083680613910e-07   
+	xMin = 2.9220049999999997e-01 	 xMax = 2.9295050000000000e-01
+	yMin = -1.5247699999999999e-02 	 yMax = -1.4747699999999999e-02
+ 
+Important parameters:
+	eps = 1.2502083680613909e-09
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	PixelWidth = 1.2502083680613910e-07   
+	pixel_spacing_bits = 22 	use float 
+ 
+ 
+==========================================================================================================================
+
+
+
+ 
+	File 2_112.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 2_101.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 2_113.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 2_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+ 
+This island (=  mini Mandelbrot set) is 2 example from plane_examples 
+	Period of main  (pseudo)cardioid is 3 
+	pseudocardioid_nucleus = -1.7548776662466927 +0.0000000000000000
+	second_bulb_nucleus = -1.7728929033816239 +0.0000000000000000
+plane description
+	plane center = -1.7629999999999999 +0.0000000000000000
+	zoom = 6.2500000000000000e+01
+	plane radius = 1.6000000000000000e-02
+	PixelWidth = 8.0013335555926061e-06   
+	xMin = -1.7869999999999999e+00 	 xMax = -1.7389999999999999e+00
+	yMin = -1.6000000000000000e-02 	 yMax = 1.6000000000000000e-02
+ 
+Important parameters:
+	eps = 8.0013335555926054e-08
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	PixelWidth = 8.0013335555926061e-06   
+	pixel_spacing_bits = 16 	use float 
+ 
+ 
+==========================================================================================================================
+
+
+
+ 
+	File 3_112.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 3_101.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 3_113.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 3_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+ 
+This island (=  mini Mandelbrot set) is 3 example from plane_examples 
+	Period of main  (pseudo)cardioid is 4 
+	pseudocardioid_nucleus = -0.1565201668337551 +1.0322471089228318
+	second_bulb_nucleus = -0.1628677070672551 +1.0373132408104246
+plane description
+	plane center = -0.1584200000000000 +1.0333500000000000
+	zoom = 1.0000000000000000e+02
+	plane radius = 1.0000000000000000e-02
+	PixelWidth = 5.0008334722453786e-06   
+	xMin = -1.7342000000000002e-01 	 xMax = -1.4341999999999999e-01
+	yMin = 1.0233500000000000e+00 	 yMax = 1.0433500000000000e+00
+ 
+Important parameters:
+	eps = 5.0008334722453784e-08
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	PixelWidth = 5.0008334722453786e-06   
+	pixel_spacing_bits = 17 	use float 
+ 
+ 
+==========================================================================================================================
+
+
+
+ 
+	File 4_112.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 4_101.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 4_113.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 4_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+ 
+This island (=  mini Mandelbrot set) is 4 example from plane_examples 
+	Period of main  (pseudo)cardioid is 5 
+	pseudocardioid_nucleus = 0.3592592247580075 +0.6425137371385424
+	second_bulb_nucleus = 0.3571821390763444 +0.6467175587470791
+plane description
+	plane center = 0.3584310000000000 +0.6435070000000001
+	zoom = 1.6666666666666666e+02
+	plane radius = 6.0000000000000001e-03
+	PixelWidth = 3.0005000833472271e-06   
+	xMin = 3.4943099999999999e-01 	 xMax = 3.6743100000000001e-01
+	yMin = 6.3750700000000005e-01 	 yMax = 6.4950700000000006e-01
+ 
+Important parameters:
+	eps = 3.0005000833472270e-08
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	PixelWidth = 3.0005000833472271e-06   
+	pixel_spacing_bits = 18 	use float 
+ 
+ 
+==========================================================================================================================
+
+
+
+ 
+	File 5_112.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 5_101.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 5_113.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 5_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+ 
+This island (=  mini Mandelbrot set) is 5 example from plane_examples 
+	Period of main  (pseudo)cardioid is 6 
+	pseudocardioid_nucleus = 0.4433256333996236 +0.3729624166628465
+	second_bulb_nucleus = 0.4429040727271397 +0.3759019051168369
+plane description
+	plane center = 0.4429900000000000 +0.3737270000000000
+	zoom = 2.0000000000000000e+02
+	plane radius = 5.0000000000000001e-03
+	PixelWidth = 2.5004167361226893e-06   
+	xMin = 4.3548999999999999e-01 	 xMax = 4.5049000000000000e-01
+	yMin = 3.6872699999999997e-01 	 yMax = 3.7872699999999998e-01
+ 
+Important parameters:
+	eps = 2.5004167361226892e-08
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	PixelWidth = 2.5004167361226893e-06   
+	pixel_spacing_bits = 18 	use float 
+ 
+ 
+==========================================================================================================================
+
+
+
+ 
+	File 6_112.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 6_101.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 6_113.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 6_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+ 
+This island (=  mini Mandelbrot set) is 6 example from plane_examples 
+	Period of main  (pseudo)cardioid is 7 
+	pseudocardioid_nucleus = 0.4323761926419945 +0.2267599044353486
+	second_bulb_nucleus = 0.4325688117999227 +0.2287344143397561
+plane description
+	plane center = 0.4322590000000000 +0.2273150000000000
+	zoom = 3.3333333333333331e+02
+	plane radius = 3.0000000000000001e-03
+	PixelWidth = 1.5002500416736135e-06   
+	xMin = 4.2775900000000000e-01 	 xMax = 4.3675900000000001e-01
+	yMin = 2.2431499999999999e-01 	 yMax = 2.3031499999999999e-01
+ 
+Important parameters:
+	eps = 1.5002500416736135e-08
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	PixelWidth = 1.5002500416736135e-06   
+	pixel_spacing_bits = 19 	use float 
+ 
+ 
+==========================================================================================================================
+
+
+
+ 
+	File 7_112.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 7_101.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 7_113.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 7_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+ 
+This island (=  mini Mandelbrot set) is 7 example from plane_examples 
+	Period of main  (pseudo)cardioid is 8 
+	pseudocardioid_nucleus = 0.4048996651751222 +0.1458203637665893
+	second_bulb_nucleus = 0.4052857217348803 +0.1471436024789067
+plane description
+	plane center = 0.4048790000000000 +0.1462160000000000
+	zoom = 5.0000000000000000e+02
+	plane radius = 2.0000000000000000e-03
+	PixelWidth = 1.0001666944490758e-06   
+	xMin = 4.0187899999999999e-01 	 xMax = 4.0787899999999999e-01
+	yMin = 1.4421600000000001e-01 	 yMax = 1.4821600000000001e-01
+ 
+Important parameters:
+	eps = 1.0001666944490757e-08
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	PixelWidth = 1.0001666944490758e-06   
+	pixel_spacing_bits = 19 	use float 
+ 
+ 
+==========================================================================================================================
+
+
+
+ 
+	File 8_112.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 8_101.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 8_113.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 8_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+ 
+This island (=  mini Mandelbrot set) is 8 example from plane_examples 
+	Period of main  (pseudo)cardioid is 9 
+	pseudocardioid_nucleus = 0.3786081241329295 +0.0985580111183820
+	second_bulb_nucleus = 0.3790223069196944 +0.0994560904854333
+plane description
+	plane center = 0.3786310000000000 +0.0988410000000000
+	zoom = 1.0000000000000000e+03
+	plane radius = 1.0000000000000000e-03
+	PixelWidth = 5.0008334722453788e-07   
+	xMin = 3.7713099999999999e-01 	 xMax = 3.8013100000000000e-01
+	yMin = 9.7840999999999997e-02 	 yMax = 9.9840999999999999e-02
+ 
+Important parameters:
+	eps = 5.0008334722453784e-09
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	PixelWidth = 5.0008334722453788e-07   
+	pixel_spacing_bits = 20 	use float 
+ 
+ 
+==========================================================================================================================
+
+
+
+ 
+	File 9_112.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 9_101.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 9_113.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 9_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+ 
+This island (=  mini Mandelbrot set) is 9 example from plane_examples 
+	Period of main  (pseudo)cardioid is 10 
+	pseudocardioid_nucleus = 0.3568172484923120 +0.0694528654668303
+	second_bulb_nucleus = 0.3571996184617081 +0.0700739466592557
+plane description
+	plane center = 0.3568540000000000 +0.0696590000000000
+	zoom = 1.0000000000000000e+03
+	plane radius = 1.0000000000000000e-03
+	PixelWidth = 5.0008334722453788e-07   
+	xMin = 3.5535400000000000e-01 	 xMax = 3.5835400000000001e-01
+	yMin = 6.8658999999999998e-02 	 yMax = 7.0659000000000000e-02
+ 
+Important parameters:
+	eps = 5.0008334722453784e-09
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	PixelWidth = 5.0008334722453788e-07   
+	pixel_spacing_bits = 20 	use float 
+ 
+ 
+==========================================================================================================================
+
+
+
+ 
+	File 10_112.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 10_101.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 10_113.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 10_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+ 
+This island (=  mini Mandelbrot set) is 10 example from plane_examples 
+	Period of main  (pseudo)cardioid is 11 
+	pseudocardioid_nucleus = 0.3394108199955985 +0.0506682851626426
+	second_bulb_nucleus = 0.3397441939454261 +0.0511068339780829
+plane description
+	plane center = 0.3394540000000000 +0.0508230000000000
+	zoom = 1.0000000000000000e+03
+	plane radius = 1.0000000000000000e-03
+	PixelWidth = 5.0008334722453788e-07   
+	xMin = 3.3795399999999998e-01 	 xMax = 3.4095399999999998e-01
+	yMin = 4.9822999999999999e-02 	 yMax = 5.1823000000000001e-02
+ 
+Important parameters:
+	eps = 5.0008334722453784e-09
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	PixelWidth = 5.0008334722453788e-07   
+	pixel_spacing_bits = 20 	use float 
+ 
+ 
+==========================================================================================================================
+
+
+
+ 
+	File 11_112.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 11_101.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 11_113.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+	File 11_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+ 
+This island (=  mini Mandelbrot set) is 11 example from plane_examples 
+	Period of main  (pseudo)cardioid is 12 
+	pseudocardioid_nucleus = 0.3255895095506603 +0.0380478809347557
+	second_bulb_nucleus = 0.3258733140240880 +0.0383640618686012
+plane description
+	plane center = 0.3256310000000000 +0.0381640000000000
+	zoom = 1.0000000000000000e+03
+	plane radius = 1.0000000000000000e-03
+	PixelWidth = 5.0008334722453788e-07   
+	xMin = 3.2413100000000000e-01 	 xMax = 3.2713100000000001e-01
+	yMin = 3.7163999999999996e-02 	 yMax = 3.9163999999999997e-02
+ 
+Important parameters:
+	eps = 5.0008334722453784e-09
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	PixelWidth = 5.0008334722453788e-07   
+	pixel_spacing_bits = 20 	use float 
+ 
+ 
+==========================================================================================================================
+
+
+
+ 
+ 
+gcc version: 11.3.0

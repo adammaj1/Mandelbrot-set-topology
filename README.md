@@ -16,10 +16,11 @@ How to describe hyperbolic component of Mandelbrot set ? ( escpecially [island](
 
 For each island: 
 * find period 
-* find center of component ( nucleus)
+* find center of component ( nucleus) = pseudocardioid_nucleus
 * find shape ( psudocircle or pseudocardioid)
-* find cusp of pseudorardioid
-* find root point between 2 main componnents
+* find cusp of pseudocardioid = pseudocardioid_cusp
+* find root point between 2 main componnents = pseudocardioid_root_half
+* find center of second component ( nucleus) = second_bulb_nucleus
 * compute [distortion of the island](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/Mandelbrot_set/mset_distortion)
 
 
@@ -29,7 +30,7 @@ For each island:
 Here are few examples of [islands](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/island_t). 
 * first image ( LastIteration = 108):  shows interior points
 * second image (Period = 107): Only main (pseudo)cardioid of period p  and main component of period 2p is drawn 
-* for more description see the [output txt file m.txt](./src/cli/m.txt)
+* for more description see the [output txt file m.txt](./src/cli/new/m.txt)
 
 ```c
 #define kMax 12 // number of examples, see line 211 plane_examples
@@ -138,10 +139,11 @@ Period 3 island looks like whole Mandelbrot set
 
 
 # Files
-* [m.c](./src/cli/m.c) - one file c program
-* [m.sh](./src/cli/m.sh) - bash file used to compile, run the m.c and image manipulations using ImageMagic console programs
-* [Makefile](./src/cli/Makefile) file for make which runs all
-* [output txt file m.txt](./src/cli/m.txt) - to read about the results
+* [m.c](./src/cli/new/m.c) - one file c program
+* [m.sh](./src/cli/new/m.sh) - bash file used to compile, run the m.c and image manipulations using ImageMagic console programs
+* [Makefile](./src/cli/new/Makefile) file for make which runs all
+* [output txt file m.txt](./src/cli/new/m.txt) - to read about the results
+* [old code](./src/cli/old/) 
 * [images are in the png directory](./png/) 
 
 
@@ -155,6 +157,16 @@ Period 3 island looks like whole Mandelbrot set
 * [rendering-mandelbrot-set-mu-units](https://fractalforums.org/code-snippets-fragments/74/rendering-mandelbrot-set-mu-units/3485): How to extract a mu-unit of a given period using distance estimation colouring, pruning off the outer filaments?
 * [mu-atom ](https://mathr.co.uk/mandelbrot/mu-atom/) - mu-atom mapping: period p hyperbolic components of the Mandelbrot set can each be mapped conformally to the unit disc, by the derivative d/dz of the periodic limit cycle where f_c^p(z_0) = z_0.
 * [period-doubling-in-minibrots](https://fractalforums.org/noobs-corner/76/period-doubling-in-minibrots/3990)
+* [shape estimation]()
+
+
+Description
+* all calculations are in a point-sampling, numerical ( double precision), non-rounding controlled manner
+* execution time of DrawImage for LastIteration = 31 	for Period = 525 	MultiplierMap = 5 seconds for example 2 ( period 3)
+
+
+
+
 
 # Key words
 * [distortion](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/Mandelbrot_set/mset_distortion)
