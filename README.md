@@ -63,6 +63,12 @@ Here unknown pixels are marked by red big pixels. They are boundary points.
 
 ![](./png/0_107.png "description") 
 
+
+With important point: pseudocardioid_nucleus, pseudocardioid_cusp, pseudocardioid_root_half, second_bulb_nucleus  
+
+![](./png/0_114.png "description") 
+
+
 ## Period 16 island
 
 ![](./png/1_period_32_LastIteration.png "description") 
@@ -87,6 +93,11 @@ After increasing iMax (10 000 and 50 000) ( and orbit[OrbitLength]; // length(or
 ![](./png/1_111_50000.png "description") 
 
 
+With important point: pseudocardioid_nucleus, pseudocardioid_cusp, pseudocardioid_root_half, second_bulb_nucleus  
+
+![](./png/1_114.png "description") 
+
+
 ## Period 3
 
 Period 3 island looks like whole Mandelbrot set  
@@ -95,44 +106,84 @@ Period 3 island looks like whole Mandelbrot set
 
 ![](./png/2_107.png "description") 
 
+With important point: pseudocardioid_nucleus, pseudocardioid_cusp, pseudocardioid_root_half, second_bulb_nucleus  
+
+![](./png/2_114.png "description") 
+
 ## Period 4
 
 ![](./png/3_period_4_LastIteration.png "description") 
 
 ![](./png/3_107.png "description") 
 
+With important point: pseudocardioid_nucleus, pseudocardioid_cusp, pseudocardioid_root_half, second_bulb_nucleus  
+
+![](./png/3_114.png "description") 
+
 ## Period 5
 ![](./png/4_period_5_LastIteration.png "description") 
 
 ![](./png/4_107.png "description") 
 
+With important point: pseudocardioid_nucleus, pseudocardioid_cusp, pseudocardioid_root_half, second_bulb_nucleus  
+
+![](./png/4_114.png "description") 
+
 ## Period 6
 
 ![](./png/5_period_6_LastIteration.png "description") 
 
+With important point: pseudocardioid_nucleus, pseudocardioid_cusp, pseudocardioid_root_half, second_bulb_nucleus  
+
+![](./png/5_114.png "description") 
+
 ## Period 7
 ![](./png/6_period_7_LastIteration.png "description") 
 
+With important point: pseudocardioid_nucleus, pseudocardioid_cusp, pseudocardioid_root_half, second_bulb_nucleus  
+
+![](./png/6_114.png "description") 
+
 ## Period 8
 ![](./png/7_period_8_LastIteration.png "description") 
+
+With important point: pseudocardioid_nucleus, pseudocardioid_cusp, pseudocardioid_root_half, second_bulb_nucleus  
+
+![](./png/7_114.png "description") 
 
 ## Period 9
 
 ![](./png/8_period_9_LastIteration.png "description") 
 
+With important point: pseudocardioid_nucleus, pseudocardioid_cusp, pseudocardioid_root_half, second_bulb_nucleus  
+
+![](./png/8_114.png "description") 
+
 ## Period 10
 
-![](./png/9_period_10_LastIteration.png "description") 
+![](./png/9_period_10_LastIteration.png "description")  
+
+With important point: pseudocardioid_nucleus, pseudocardioid_cusp, pseudocardioid_root_half, second_bulb_nucleus  
+
+![](./png/9_114.png "description") 
 
 ## Period 11
 
 ![](./png/10_period_11_LastIteration.png "description")
+
+With important point: pseudocardioid_nucleus, pseudocardioid_cusp, pseudocardioid_root_half, second_bulb_nucleus  
+
+![](./png/10_114.png "description") 
 
 ## Period 12 
 
 ![](./png/11_period_12_LastIteration.png "description") 
 
 ![](./png/11_107.png "description") 
+
+With important point: pseudocardioid_nucleus, pseudocardioid_cusp, pseudocardioid_root_half, second_bulb_nucleus  
+
+![](./png/11_114.png "description") 
 
 
 
