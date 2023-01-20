@@ -30,7 +30,7 @@ For each island:
 Here are few examples of [islands](https://en.wikibooks.org/wiki/Fractals/Iterations_in_the_complex_plane/island_t). 
 * first image ( LastIteration = 108):  shows interior points
 * second image (Period = 107): Only main (pseudo)cardioid of period p  and main component of period 2p is drawn 
-* for more description see the [output txt file m.txt](./src/cli/new/m.txt)
+* for more description see the [output the new txt file m.txt](./src/cli/new/m.txt) and [output the old txt file m.txt](./src/cli/old/m.txt)
 
 ```c
 #define kMax 12 // number of examples, see line 211 plane_examples
@@ -78,7 +78,7 @@ The components are smaller and do not touch in root points
 
 ![](./png/1_107.png "description") 
 
-Here is comparison using ImageMagic ( [see bash file](./src/cli/m.sh))
+Here is the comparison using ImageMagic ( [see bash file](./src/cli/old/m.sh))
 
 ![](./png/diff1.png "description") 
 
@@ -93,7 +93,10 @@ After increasing iMax (10 000 and 50 000) ( and orbit[OrbitLength]; // length(or
 ![](./png/1_111_50000.png "description") 
 
 
-With important points: pseudocardioid_nucleus, pseudocardioid_cusp, pseudocardioid_root_half, second_bulb_nucleus  
+With 
+* important points: pseudocardioid_nucleus, pseudocardioid_cusp, pseudocardioid_root_half, second_bulb_nucleus  
+* 2 axis, one thru pseudocardioid_nucleus and pseudocardioid_cusp, second thru  pseudocardioid_nucleus and pseudocardioid_root_half
+* distorsion angle is denoted with arc
 
 ![](./png/1_114.png "description") 
 
@@ -106,82 +109,47 @@ Period 3 island looks like whole Mandelbrot set
 
 ![](./png/2_107.png "description") 
 
-With important points: pseudocardioid_nucleus, pseudocardioid_cusp, pseudocardioid_root_half, second_bulb_nucleus  
+With important points, axes and distortion angle 
 
 ![](./png/2_114.png "description") 
 
 ## Period 4
 
-![](./png/3_period_4_LastIteration.png "description") 
-
-![](./png/3_107.png "description") 
-
-With important points: pseudocardioid_nucleus, pseudocardioid_cusp, pseudocardioid_root_half, second_bulb_nucleus  
-
 ![](./png/3_114.png "description") 
 
 ## Period 5
-![](./png/4_period_5_LastIteration.png "description") 
-
-![](./png/4_107.png "description") 
-
-With important points: pseudocardioid_nucleus, pseudocardioid_cusp, pseudocardioid_root_half, second_bulb_nucleus  
 
 ![](./png/4_114.png "description") 
 
 ## Period 6
 
-![](./png/5_period_6_LastIteration.png "description") 
-
-With important points: pseudocardioid_nucleus, pseudocardioid_cusp, pseudocardioid_root_half, second_bulb_nucleus  
 
 ![](./png/5_114.png "description") 
 
 ## Period 7
-![](./png/6_period_7_LastIteration.png "description") 
-
-With important points: pseudocardioid_nucleus, pseudocardioid_cusp, pseudocardioid_root_half, second_bulb_nucleus  
 
 ![](./png/6_114.png "description") 
 
 ## Period 8
-![](./png/7_period_8_LastIteration.png "description") 
-
-With important points: pseudocardioid_nucleus, pseudocardioid_cusp, pseudocardioid_root_half, second_bulb_nucleus  
 
 ![](./png/7_114.png "description") 
 
 ## Period 9
 
-![](./png/8_period_9_LastIteration.png "description") 
-
-With important points: pseudocardioid_nucleus, pseudocardioid_cusp, pseudocardioid_root_half, second_bulb_nucleus  
 
 ![](./png/8_114.png "description") 
 
 ## Period 10
 
-![](./png/9_period_10_LastIteration.png "description")  
-
-With important points: pseudocardioid_nucleus, pseudocardioid_cusp, pseudocardioid_root_half, second_bulb_nucleus  
 
 ![](./png/9_114.png "description") 
 
 ## Period 11
 
-![](./png/10_period_11_LastIteration.png "description")
-
-With important points: pseudocardioid_nucleus, pseudocardioid_cusp, pseudocardioid_root_half, second_bulb_nucleus  
 
 ![](./png/10_114.png "description") 
 
 ## Period 12 
-
-![](./png/11_period_12_LastIteration.png "description") 
-
-![](./png/11_107.png "description") 
-
-With important points: pseudocardioid_nucleus, pseudocardioid_cusp, pseudocardioid_root_half, second_bulb_nucleus  
 
 ![](./png/11_114.png "description") 
 
