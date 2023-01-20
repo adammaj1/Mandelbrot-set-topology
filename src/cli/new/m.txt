@@ -1,26 +1,29 @@
-	File 0_112.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
-	File 0_101.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
-	File 0_113.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
 	File 0_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
  
 This island (=  mini Mandelbrot set) is 0 example from plane_examples 
 	Period of main  (pseudo)cardioid is 1 
 	pseudocardioid_nucleus = 0.0000000000000000 +0.0000000000000000
+	pseudocardioid_cusp = 0.2500000000000000 +0.0000000000000000
+	pseudocardioid_root_half = -0.7500000000000000 +0.0000000000000001
 	second_bulb_nucleus = -1.0000000000000000 +0.0000000000000000
+	island distortion = 0.0000000000000070 degrees = 0.0000000000000000 turns = 0.0000000000004020 radians
+	island sizes: HalfRoot-Cusp  = 1.0000000000000000  = 0.4166666666666666 of Image Width 
+ 
+ 
 plane description
 	plane center = -0.4000000000000000 +0.0000000000000000
 	zoom = 1.2500000000000000e+00
 	plane radius = 8.0000000000000004e-01
-	PixelWidth = 4.0006667777962998e-04   
 	xMin = -1.6000000000000001e+00 	 xMax = 8.0000000000000016e-01
 	yMin = -8.0000000000000004e-01 	 yMax = 8.0000000000000004e-01
+	PixelWidth = 1.6010673782521684e-03   
+	pixel_spacing_bits = 9 	use float 
  
 Important parameters:
-	eps = 4.0006667777962996e-06
+	eps = 1.6010673782521683e-05
 	Escape Radius = ER = 2.0000000000000000e+00
 	iterMax_LastIteration = 100000
-	PixelWidth = 4.0006667777962998e-04   
-	pixel_spacing_bits = 11 	use float 
+	iterMax_Period = 3000
  
  
 ==========================================================================================================================
@@ -28,29 +31,32 @@ Important parameters:
 
 
  
-	File 1_112.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
-	File 1_101.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
-	File 1_113.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
 	File 1_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
  
 This island (=  mini Mandelbrot set) is 1 example from plane_examples 
 	Period of main  (pseudo)cardioid is 16 
 	pseudocardioid_nucleus = 0.2925037532341934 -0.0149250689983438
+	pseudocardioid_cusp = 0.2924767916960932 -0.0148921134165970
+	pseudocardioid_root_half = 0.2926094194266020 -0.0150053522370222
 	second_bulb_nucleus = 0.2926480050973883 -0.0150278865552610
+	island distortion = 10.2217850853740675 degrees = 0.0283938474593724 turns = 585.6651445133592233 radians
+	island sizes: HalfRoot-Cusp  = 0.0001743936505473  = 0.3875414456607196 of Image Width 
+ 
+ 
 plane description
-	plane center = 0.2925755000000000 -0.0149977000000000
-	zoom = 4.0000000000000000e+03
-	plane radius = 2.5000000000000001e-04
-	PixelWidth = 1.2502083680613910e-07   
-	xMin = 2.9220049999999997e-01 	 xMax = 2.9295050000000000e-01
-	yMin = -1.5247699999999999e-02 	 yMax = -1.4747699999999999e-02
+	plane center = 0.2925400000000000 -0.0149700000000000
+	zoom = 6.6666666666666670e+03
+	plane radius = 1.4999999999999999e-04
+	xMin = 2.9231500000000005e-01 	 xMax = 2.9276500000000000e-01
+	yMin = -1.5120000000000001e-02 	 yMax = -1.4820000000000000e-02
+	PixelWidth = 3.0020013342224847e-07   
+	pixel_spacing_bits = 21 	use float 
  
 Important parameters:
-	eps = 1.2502083680613909e-09
+	eps = 3.0020013342224846e-09
 	Escape Radius = ER = 2.0000000000000000e+00
 	iterMax_LastIteration = 100000
-	PixelWidth = 1.2502083680613910e-07   
-	pixel_spacing_bits = 22 	use float 
+	iterMax_Period = 48000
  
  
 ==========================================================================================================================
@@ -58,29 +64,32 @@ Important parameters:
 
 
  
-	File 2_112.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
-	File 2_101.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
-	File 2_113.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
 	File 2_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
  
 This island (=  mini Mandelbrot set) is 2 example from plane_examples 
 	Period of main  (pseudo)cardioid is 3 
 	pseudocardioid_nucleus = -1.7548776662466927 +0.0000000000000000
-	second_bulb_nucleus = -1.7728929033816239 +0.0000000000000000
+	pseudocardioid_cusp = -1.7500000000000000 +0.0000000000000000
+	pseudocardioid_root_half = -1.7685291524676852 +0.0000000000000000
+	second_bulb_nucleus = -1.7728929033816236 -0.0000000000000000
+	island distortion = 0.0000000000000066 degrees = 0.0000000000000000 turns = 0.0000000000003803 radians
+	island sizes: HalfRoot-Cusp  = 0.0185291524676852  = 0.3860240097434405 of Image Width 
+ 
+ 
 plane description
 	plane center = -1.7629999999999999 +0.0000000000000000
 	zoom = 6.2500000000000000e+01
 	plane radius = 1.6000000000000000e-02
-	PixelWidth = 8.0013335555926061e-06   
 	xMin = -1.7869999999999999e+00 	 xMax = -1.7389999999999999e+00
 	yMin = -1.6000000000000000e-02 	 yMax = 1.6000000000000000e-02
+	PixelWidth = 3.2021347565043394e-05   
+	pixel_spacing_bits = 14 	use float 
  
 Important parameters:
-	eps = 8.0013335555926054e-08
+	eps = 3.2021347565043394e-07
 	Escape Radius = ER = 2.0000000000000000e+00
 	iterMax_LastIteration = 100000
-	PixelWidth = 8.0013335555926061e-06   
-	pixel_spacing_bits = 16 	use float 
+	iterMax_Period = 9000
  
  
 ==========================================================================================================================
@@ -88,29 +97,32 @@ Important parameters:
 
 
  
-	File 3_112.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
-	File 3_101.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
-	File 3_113.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
 	File 3_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
  
 This island (=  mini Mandelbrot set) is 3 example from plane_examples 
 	Period of main  (pseudo)cardioid is 4 
 	pseudocardioid_nucleus = -0.1565201668337551 +1.0322471089228318
+	pseudocardioid_cusp = -0.1547246055119252 +1.0310472277489522
+	pseudocardioid_root_half = -0.1613575037146995 +1.0360310848535368
 	second_bulb_nucleus = -0.1628677070672551 +1.0373132408104246
+	island distortion = 3.1678661702170463 degrees = 0.0087996282506029 turns = 181.5053616255181623 radians
+	island sizes: HalfRoot-Cusp  = 0.0082966360777899  = 0.3456931699079110 of Image Width 
+ 
+ 
 plane description
 	plane center = -0.1584200000000000 +1.0333500000000000
-	zoom = 1.0000000000000000e+02
-	plane radius = 1.0000000000000000e-02
-	PixelWidth = 5.0008334722453786e-06   
-	xMin = -1.7342000000000002e-01 	 xMax = -1.4341999999999999e-01
-	yMin = 1.0233500000000000e+00 	 yMax = 1.0433500000000000e+00
+	zoom = 1.2500000000000000e+02
+	plane radius = 8.0000000000000002e-03
+	xMin = -1.7042000000000002e-01 	 xMax = -1.4641999999999999e-01
+	yMin = 1.0253500000000000e+00 	 yMax = 1.0413500000000000e+00
+	PixelWidth = 1.6010673782521697e-05   
+	pixel_spacing_bits = 15 	use float 
  
 Important parameters:
-	eps = 5.0008334722453784e-08
+	eps = 1.6010673782521697e-07
 	Escape Radius = ER = 2.0000000000000000e+00
 	iterMax_LastIteration = 100000
-	PixelWidth = 5.0008334722453786e-06   
-	pixel_spacing_bits = 17 	use float 
+	iterMax_Period = 12000
  
  
 ==========================================================================================================================
@@ -118,29 +130,32 @@ Important parameters:
 
 
  
-	File 4_112.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
-	File 4_101.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
-	File 4_113.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
 	File 4_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
  
 This island (=  mini Mandelbrot set) is 4 example from plane_examples 
 	Period of main  (pseudo)cardioid is 5 
-	pseudocardioid_nucleus = 0.3592592247580075 +0.6425137371385424
-	second_bulb_nucleus = 0.3571821390763444 +0.6467175587470791
+	pseudocardioid_nucleus = 0.3592592247580074 +0.6425137371385423
+	pseudocardioid_cusp = 0.3599331333357187 +0.6415066667139067
+	pseudocardioid_root_half = 0.3576453618859148 +0.6456596905313643
+	second_bulb_nucleus = 0.3571821390763446 +0.6467175587470793
+	island distortion = 4.9405365983730638 degrees = 0.0137237127732585 turns = 283.0718956319959148 radians
+	island sizes: HalfRoot-Cusp  = 0.0047414665489602  = 0.3160977699306778 of Image Width 
+ 
+ 
 plane description
 	plane center = 0.3584310000000000 +0.6435070000000001
-	zoom = 1.6666666666666666e+02
-	plane radius = 6.0000000000000001e-03
-	PixelWidth = 3.0005000833472271e-06   
-	xMin = 3.4943099999999999e-01 	 xMax = 3.6743100000000001e-01
-	yMin = 6.3750700000000005e-01 	 yMax = 6.4950700000000006e-01
+	zoom = 2.0000000000000000e+02
+	plane radius = 5.0000000000000001e-03
+	xMin = 3.5093099999999999e-01 	 xMax = 3.6593100000000001e-01
+	yMin = 6.3850700000000005e-01 	 yMax = 6.4850700000000006e-01
+	PixelWidth = 1.0006671114076059e-05   
+	pixel_spacing_bits = 16 	use float 
  
 Important parameters:
-	eps = 3.0005000833472270e-08
+	eps = 1.0006671114076059e-07
 	Escape Radius = ER = 2.0000000000000000e+00
 	iterMax_LastIteration = 100000
-	PixelWidth = 3.0005000833472271e-06   
-	pixel_spacing_bits = 18 	use float 
+	iterMax_Period = 15000
  
  
 ==========================================================================================================================
@@ -148,29 +163,32 @@ Important parameters:
 
 
  
-	File 5_112.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
-	File 5_101.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
-	File 5_113.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
 	File 5_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
  
 This island (=  mini Mandelbrot set) is 5 example from plane_examples 
 	Period of main  (pseudo)cardioid is 6 
-	pseudocardioid_nucleus = 0.4433256333996236 +0.3729624166628465
-	second_bulb_nucleus = 0.4429040727271397 +0.3759019051168369
+	pseudocardioid_nucleus = 0.4433256333996235 +0.3729624166628465
+	pseudocardioid_cusp = 0.4435506914129445 +0.3722468213589523
+	pseudocardioid_root_half = 0.4429672025151836 +0.3751677301517554
+	second_bulb_nucleus = 0.4429040727271398 +0.3759019051168369
+	island distortion = 6.1617377889422356 degrees = 0.0171159383026173 turns = 353.0415697917424609 radians
+	island sizes: HalfRoot-Cusp  = 0.0029786183826876  = 0.3309575980764045 of Image Width 
+ 
+ 
 plane description
-	plane center = 0.4429900000000000 +0.3737270000000000
-	zoom = 2.0000000000000000e+02
-	plane radius = 5.0000000000000001e-03
-	PixelWidth = 2.5004167361226893e-06   
-	xMin = 4.3548999999999999e-01 	 xMax = 4.5049000000000000e-01
-	yMin = 3.6872699999999997e-01 	 yMax = 3.7872699999999998e-01
+	plane center = 0.4429900000000000 +0.3740000000000000
+	zoom = 3.3333333333333331e+02
+	plane radius = 3.0000000000000001e-03
+	xMin = 4.3848999999999999e-01 	 xMax = 4.4749000000000000e-01
+	yMin = 3.7100000000000000e-01 	 yMax = 3.7700000000000000e-01
+	PixelWidth = 6.0040026684456354e-06   
+	pixel_spacing_bits = 17 	use float 
  
 Important parameters:
-	eps = 2.5004167361226892e-08
+	eps = 6.0040026684456357e-08
 	Escape Radius = ER = 2.0000000000000000e+00
 	iterMax_LastIteration = 100000
-	PixelWidth = 2.5004167361226893e-06   
-	pixel_spacing_bits = 18 	use float 
+	iterMax_Period = 18000
  
  
 ==========================================================================================================================
@@ -178,29 +196,32 @@ Important parameters:
 
 
  
-	File 6_112.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
-	File 6_101.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
-	File 6_113.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
 	File 6_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
  
 This island (=  mini Mandelbrot set) is 6 example from plane_examples 
 	Period of main  (pseudo)cardioid is 7 
 	pseudocardioid_nucleus = 0.4323761926419945 +0.2267599044353486
+	pseudocardioid_cusp = 0.4324197983701357 +0.2262688040900158
+	pseudocardioid_root_half = 0.4324891570121087 +0.2282459156957758
 	second_bulb_nucleus = 0.4325688117999227 +0.2287344143397561
+	island distortion = 7.0832512125542779 degrees = 0.0196756978126508 turns = 405.8403997322172927 radians
+	island sizes: HalfRoot-Cusp  = 0.0019783278097542  = 0.3297213016257065 of Image Width 
+ 
+ 
 plane description
-	plane center = 0.4322590000000000 +0.2273150000000000
-	zoom = 3.3333333333333331e+02
-	plane radius = 3.0000000000000001e-03
-	PixelWidth = 1.5002500416736135e-06   
-	xMin = 4.2775900000000000e-01 	 xMax = 4.3675900000000001e-01
-	yMin = 2.2431499999999999e-01 	 yMax = 2.3031499999999999e-01
+	plane center = 0.4322590000000000 +0.2275000000000000
+	zoom = 5.0000000000000000e+02
+	plane radius = 2.0000000000000000e-03
+	xMin = 4.2925900000000000e-01 	 xMax = 4.3525900000000001e-01
+	yMin = 2.2550000000000001e-01 	 yMax = 2.2950000000000001e-01
+	PixelWidth = 4.0026684456304242e-06   
+	pixel_spacing_bits = 17 	use float 
  
 Important parameters:
-	eps = 1.5002500416736135e-08
+	eps = 4.0026684456304242e-08
 	Escape Radius = ER = 2.0000000000000000e+00
 	iterMax_LastIteration = 100000
-	PixelWidth = 1.5002500416736135e-06   
-	pixel_spacing_bits = 19 	use float 
+	iterMax_Period = 21000
  
  
 ==========================================================================================================================
@@ -208,29 +229,32 @@ Important parameters:
 
 
  
-	File 7_112.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
-	File 7_101.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
-	File 7_113.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
 	File 7_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
  
 This island (=  mini Mandelbrot set) is 7 example from plane_examples 
 	Period of main  (pseudo)cardioid is 8 
 	pseudocardioid_nucleus = 0.4048996651751222 +0.1458203637665893
-	second_bulb_nucleus = 0.4052857217348803 +0.1471436024789067
+	pseudocardioid_cusp = 0.4048726854825717 +0.1454827262948786
+	pseudocardioid_root_half = 0.4051659842958418 +0.1468198558710417
+	second_bulb_nucleus = 0.4052857217348803 +0.1471436024789066
+	island distortion = 7.8032252414409493 degrees = 0.0216756256706693 turns = 447.0918729486830898 radians
+	island sizes: HalfRoot-Cusp  = 0.0013689191712135  = 0.3042042602696592 of Image Width 
+ 
+ 
 plane description
 	plane center = 0.4048790000000000 +0.1462160000000000
-	zoom = 5.0000000000000000e+02
-	plane radius = 2.0000000000000000e-03
-	PixelWidth = 1.0001666944490758e-06   
-	xMin = 4.0187899999999999e-01 	 xMax = 4.0787899999999999e-01
-	yMin = 1.4421600000000001e-01 	 yMax = 1.4821600000000001e-01
+	zoom = 6.6666666666666663e+02
+	plane radius = 1.5000000000000000e-03
+	xMin = 4.0262900000000001e-01 	 xMax = 4.0712899999999996e-01
+	yMin = 1.4471600000000001e-01 	 yMax = 1.4771600000000001e-01
+	PixelWidth = 3.0020013342227809e-06   
+	pixel_spacing_bits = 18 	use float 
  
 Important parameters:
-	eps = 1.0001666944490757e-08
+	eps = 3.0020013342227808e-08
 	Escape Radius = ER = 2.0000000000000000e+00
 	iterMax_LastIteration = 100000
-	PixelWidth = 1.0001666944490758e-06   
-	pixel_spacing_bits = 19 	use float 
+	iterMax_Period = 24000
  
  
 ==========================================================================================================================
@@ -238,29 +262,32 @@ Important parameters:
 
 
  
-	File 8_112.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
-	File 8_101.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
-	File 8_113.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
 	File 8_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
  
 This island (=  mini Mandelbrot set) is 8 example from plane_examples 
 	Period of main  (pseudo)cardioid is 9 
 	pseudocardioid_nucleus = 0.3786081241329295 +0.0985580111183820
+	pseudocardioid_cusp = 0.3785570297721265 +0.0983223178832499
+	pseudocardioid_root_half = 0.3789016973502874 +0.0992390591018952
 	second_bulb_nucleus = 0.3790223069196944 +0.0994560904854333
+	island distortion = 8.3732692725677360 degrees = 0.0232590813126882 turns = 479.7529900706372814 radians
+	island sizes: HalfRoot-Cusp  = 0.0009793927717717  = 0.3264642572572402 of Image Width 
+ 
+ 
 plane description
 	plane center = 0.3786310000000000 +0.0988410000000000
 	zoom = 1.0000000000000000e+03
 	plane radius = 1.0000000000000000e-03
-	PixelWidth = 5.0008334722453788e-07   
 	xMin = 3.7713099999999999e-01 	 xMax = 3.8013100000000000e-01
 	yMin = 9.7840999999999997e-02 	 yMax = 9.9840999999999999e-02
+	PixelWidth = 2.0013342228152121e-06   
+	pixel_spacing_bits = 18 	use float 
  
 Important parameters:
-	eps = 5.0008334722453784e-09
+	eps = 2.0013342228152121e-08
 	Escape Radius = ER = 2.0000000000000000e+00
 	iterMax_LastIteration = 100000
-	PixelWidth = 5.0008334722453788e-07   
-	pixel_spacing_bits = 20 	use float 
+	iterMax_Period = 27000
  
  
 ==========================================================================================================================
@@ -268,29 +295,32 @@ Important parameters:
 
 
  
-	File 9_112.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
-	File 9_101.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
-	File 9_113.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
 	File 9_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
  
 This island (=  mini Mandelbrot set) is 9 example from plane_examples 
 	Period of main  (pseudo)cardioid is 10 
 	pseudocardioid_nucleus = 0.3568172484923120 +0.0694528654668303
+	pseudocardioid_cusp = 0.3567613140337215 +0.0692849986470241
+	pseudocardioid_root_half = 0.3570914454971860 +0.0699258165824696
 	second_bulb_nucleus = 0.3571996184617081 +0.0700739466592557
+	island distortion = 8.8278041145438362 degrees = 0.0245216780959551 turns = 505.7959181589212108 radians
+	island sizes: HalfRoot-Cusp  = 0.0007208567191598  = 0.3432651043618100 of Image Width 
+ 
+ 
 plane description
 	plane center = 0.3568540000000000 +0.0696590000000000
-	zoom = 1.0000000000000000e+03
-	plane radius = 1.0000000000000000e-03
-	PixelWidth = 5.0008334722453788e-07   
-	xMin = 3.5535400000000000e-01 	 xMax = 3.5835400000000001e-01
-	yMin = 6.8658999999999998e-02 	 yMax = 7.0659000000000000e-02
+	zoom = 1.4285714285714287e+03
+	plane radius = 6.9999999999999999e-04
+	xMin = 3.5580400000000001e-01 	 xMax = 3.5790400000000000e-01
+	yMin = 6.8958999999999993e-02 	 yMax = 7.0359000000000005e-02
+	PixelWidth = 1.4009339559706409e-06   
+	pixel_spacing_bits = 19 	use float 
  
 Important parameters:
-	eps = 5.0008334722453784e-09
+	eps = 1.4009339559706410e-08
 	Escape Radius = ER = 2.0000000000000000e+00
 	iterMax_LastIteration = 100000
-	PixelWidth = 5.0008334722453788e-07   
-	pixel_spacing_bits = 20 	use float 
+	iterMax_Period = 30000
  
  
 ==========================================================================================================================
@@ -298,29 +328,32 @@ Important parameters:
 
 
  
-	File 10_112.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
-	File 10_101.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
-	File 10_113.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
 	File 10_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
  
 This island (=  mini Mandelbrot set) is 10 example from plane_examples 
 	Period of main  (pseudo)cardioid is 11 
 	pseudocardioid_nucleus = 0.3394108199955985 +0.0506682851626426
+	pseudocardioid_cusp = 0.3393576744212897 +0.0505461651830683
+	pseudocardioid_root_half = 0.3396515014955105 +0.0510036589345229
 	second_bulb_nucleus = 0.3397441939454261 +0.0511068339780829
+	island distortion = 9.1924920908597691 degrees = 0.0255347002523882 turns = 526.6910000421204359 radians
+	island sizes: HalfRoot-Cusp  = 0.0005437231668462  = 0.3624821112307871 of Image Width 
+ 
+ 
 plane description
 	plane center = 0.3394540000000000 +0.0508230000000000
-	zoom = 1.0000000000000000e+03
-	plane radius = 1.0000000000000000e-03
-	PixelWidth = 5.0008334722453788e-07   
-	xMin = 3.3795399999999998e-01 	 xMax = 3.4095399999999998e-01
-	yMin = 4.9822999999999999e-02 	 yMax = 5.1823000000000001e-02
+	zoom = 2.0000000000000000e+03
+	plane radius = 5.0000000000000001e-04
+	xMin = 3.3870400000000001e-01 	 xMax = 3.4020399999999995e-01
+	yMin = 5.0323000000000000e-02 	 yMax = 5.1323000000000001e-02
+	PixelWidth = 1.0006671114075690e-06   
+	pixel_spacing_bits = 19 	use float 
  
 Important parameters:
-	eps = 5.0008334722453784e-09
+	eps = 1.0006671114075690e-08
 	Escape Radius = ER = 2.0000000000000000e+00
 	iterMax_LastIteration = 100000
-	PixelWidth = 5.0008334722453788e-07   
-	pixel_spacing_bits = 20 	use float 
+	iterMax_Period = 33000
  
  
 ==========================================================================================================================
@@ -328,29 +361,329 @@ Important parameters:
 
 
  
-	File 11_112.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
-	File 11_101.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
-	File 11_113.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
 	File 11_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
  
 This island (=  mini Mandelbrot set) is 11 example from plane_examples 
 	Period of main  (pseudo)cardioid is 12 
 	pseudocardioid_nucleus = 0.3255895095506603 +0.0380478809347557
+	pseudocardioid_cusp = 0.3255417799889938 +0.0379571896507026
+	pseudocardioid_root_half = 0.3257953412755062 +0.0382907085778861
 	second_bulb_nucleus = 0.3258733140240880 +0.0383640618686012
+	island distortion = 9.4870876692376047 degrees = 0.0263530213034378 turns = 543.5700833472981230 radians
+	island sizes: HalfRoot-Cusp  = 0.0004189608583239  = 0.2793072388825849 of Image Width 
+ 
+ 
 plane description
 	plane center = 0.3256310000000000 +0.0381640000000000
-	zoom = 1.0000000000000000e+03
-	plane radius = 1.0000000000000000e-03
-	PixelWidth = 5.0008334722453788e-07   
-	xMin = 3.2413100000000000e-01 	 xMax = 3.2713100000000001e-01
-	yMin = 3.7163999999999996e-02 	 yMax = 3.9163999999999997e-02
+	zoom = 2.0000000000000000e+03
+	plane radius = 5.0000000000000001e-04
+	xMin = 3.2488100000000003e-01 	 xMax = 3.2638099999999998e-01
+	yMin = 3.7663999999999996e-02 	 yMax = 3.8663999999999997e-02
+	PixelWidth = 1.0006671114075690e-06   
+	pixel_spacing_bits = 19 	use float 
  
 Important parameters:
-	eps = 5.0008334722453784e-09
+	eps = 1.0006671114075690e-08
 	Escape Radius = ER = 2.0000000000000000e+00
 	iterMax_LastIteration = 100000
-	PixelWidth = 5.0008334722453788e-07   
-	pixel_spacing_bits = 20 	use float 
+	iterMax_Period = 36000
+ 
+ 
+==========================================================================================================================
+
+
+
+ 
+	File 12_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+ 
+This island (=  mini Mandelbrot set) is 12 example from plane_examples 
+	Period of main  (pseudo)cardioid is 32 
+	pseudocardioid_nucleus = 0.2602618199285007 +0.0016677913209265
+	pseudocardioid_cusp = 0.2602576726739693 +0.0016649611887559
+	pseudocardioid_root_half = 0.2602765342390651 +0.0016730942239741
+	second_bulb_nucleus = 0.2602816727891392 +0.0016742217030500
+	island distortion = 10.9845361225518747 degrees = 0.0305126003404219 turns = 629.3675597652356828 radians
+	island sizes: HalfRoot-Cusp  = 0.0000205403237492  = 0.3423387291535830 of Image Width 
+ 
+ 
+plane description
+	plane center = 0.2602700000000000 +0.0016700000000000
+	zoom = 4.9999999999999993e+04
+	plane radius = 2.0000000000000002e-05
+	xMin = 2.6024000000000003e-01 	 xMax = 2.6029999999999998e-01
+	yMin = 1.6500000000000000e-03 	 yMax = 1.6900000000000001e-03
+	PixelWidth = 4.0026684456270169e-08   
+	pixel_spacing_bits = 24 	use float 
+ 
+Important parameters:
+	eps = 4.0026684456270168e-10
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	iterMax_Period = 96000
+ 
+ 
+==========================================================================================================================
+
+
+
+ 
+	File 13_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+ 
+This island (=  mini Mandelbrot set) is 13 example from plane_examples 
+	Period of main  (pseudo)cardioid is 64 
+	pseudocardioid_nucleus = 0.2524934589775105 +0.0001971526796077
+	pseudocardioid_cusp = 0.2524929226727006 +0.0001968820559636
+	pseudocardioid_root_half = 0.2524952866251848 +0.0001975422565789
+	second_bulb_nucleus = 0.2524959125618787 +0.0001975911465695
+	island distortion = 11.1719775049860850 degrees = 0.0310332708471836 turns = 640.1071598853940259 radians
+	island sizes: HalfRoot-Cusp  = 0.0000024544115792  = 0.3272548772300797 of Image Width 
+ 
+ 
+plane description
+	plane center = 0.2524945000000000 +0.0001973000000000
+	zoom = 3.9999999999999994e+05
+	plane radius = 2.5000000000000002e-06
+	xMin = 2.5249074999999999e-01 	 xMax = 2.5249825000000004e-01
+	yMin = 1.9479999999999999e-04 	 yMax = 1.9980000000000000e-04
+	PixelWidth = 5.0033355570708032e-09   
+	pixel_spacing_bits = 27 	use float 
+ 
+Important parameters:
+	eps = 5.0033355570708034e-11
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	iterMax_Period = 192000
+ 
+ 
+==========================================================================================================================
+
+
+
+ 
+	File 14_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+ 
+This island (=  mini Mandelbrot set) is 14 example from plane_examples 
+	Period of main  (pseudo)cardioid is 128 
+	pseudocardioid_nucleus = 0.2506132008410751 +0.0000239693264251
+	pseudocardioid_cusp = 0.2506131335369965 +0.0000239404521905
+	pseudocardioid_root_half = 0.2506134260696036 +0.0000240026467221
+	second_bulb_nucleus = 0.2506135025175892 +0.0000240037391184
+	island distortion = 11.2171220053156571 degrees = 0.0311586722369879 turns = 642.6937492226452378 radians
+	island sizes: HalfRoot-Cusp  = 0.0000002990710383  = 0.3323011537041974 of Image Width 
+ 
+ 
+plane description
+	plane center = 0.2506132900000000 +0.0000239900000000
+	zoom = 3.3333333333333335e+06
+	plane radius = 2.9999999999999999e-07
+	xMin = 2.5061284000000000e-01 	 xMax = 2.5061373999999997e-01
+	yMin = 2.3689999999999998e-05 	 yMax = 2.4290000000000000e-05
+	PixelWidth = 6.0040026682479585e-10   
+	pixel_spacing_bits = 30 	use float 
+ 
+Important parameters:
+	eps = 6.0040026682479587e-12
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	iterMax_Period = 384000
+ 
+ 
+==========================================================================================================================
+
+
+
+ 
+	File 15_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+ 
+This island (=  mini Mandelbrot set) is 15 example from plane_examples 
+	Period of main  (pseudo)cardioid is 256 
+	pseudocardioid_nucleus = 0.2501519680089798 +0.0000029549623259
+	pseudocardioid_cusp = 0.2501519596028212 +0.0000029516512654
+	pseudocardioid_root_half = 0.2501519958987391 +0.0000029582279690
+	second_bulb_nucleus = 0.2501520053248444 +0.0000029580756660
+	island distortion = 11.2283621916479994 degrees = 0.0311898949768000 turns = 643.3377644604638590 radians
+	island sizes: HalfRoot-Cusp  = 0.0000000368869447  = 0.3415457841185467 of Image Width 
+ 
+ 
+plane description
+	plane center = 0.2501519790000000 +0.0000029590000000
+	zoom = 2.7777777777777780e+07
+	plane radius = 3.5999999999999998e-08
+	xMin = 2.5015192500000000e-01 	 xMax = 2.5015203300000005e-01
+	yMin = 2.9229999999999998e-06 	 yMax = 2.9950000000000001e-06
+	PixelWidth = 7.2048032057488911e-11   
+	pixel_spacing_bits = 33 	use float 
+ 
+Important parameters:
+	eps = 7.2048032057488913e-13
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	iterMax_Period = 768000
+ 
+ 
+==========================================================================================================================
+
+
+
+ 
+	File 16_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+ 
+This island (=  mini Mandelbrot set) is 16 example from plane_examples 
+	Period of main  (pseudo)cardioid is 512 
+	pseudocardioid_nucleus = 0.2500378219137853 +0.0000003668242053
+	pseudocardioid_cusp = 0.2500378208641207 +0.0000003664285587
+	pseudocardioid_root_half = 0.2500378253818288 +0.0000003671782001
+	second_bulb_nucleus = 0.2500378265515130 +0.0000003671418932
+	island distortion = 11.2312909069461568 degrees = 0.0311980302970727 turns = 643.5055674864528328 radians
+	island sizes: HalfRoot-Cusp  = 0.0000000045794813  = 0.3816234429196464 of Image Width 
+ 
+ 
+plane description
+	plane center = 0.2500378230000000 +0.0000003673000000
+	zoom = 2.4999999999999997e+08
+	plane radius = 4.0000000000000002e-09
+	xMin = 2.5003781700000000e-01 	 xMax = 2.5003782899999999e-01
+	yMin = 3.6330000000000003e-07 	 yMax = 3.7130000000000000e-07
+	PixelWidth = 8.0053368870471850e-12   
+	pixel_spacing_bits = 36 	use float 
+ 
+Important parameters:
+	eps = 8.0053368870471844e-14
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	iterMax_Period = 1536000
+ 
+ 
+==========================================================================================================================
+
+
+
+ 
+	File 17_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+ 
+This island (=  mini Mandelbrot set) is 17 example from plane_examples 
+	Period of main  (pseudo)cardioid is 1024 
+	pseudocardioid_nucleus = 0.2500094340031834 +0.0000000456947865
+	pseudocardioid_cusp = 0.2500094338720646 +0.0000000456464572
+	pseudocardioid_root_half = 0.2500094344355039 +0.0000000457357110
+	second_bulb_nucleus = 0.2500094345811653 +0.0000000457301178
+	island distortion = 11.2320980460567430 degrees = 0.0312002723501576 turns = 643.5518131509718387 radians
+	island sizes: HalfRoot-Cusp  = 0.0000000005704648  = 0.3803098559762031 of Image Width 
+ 
+ 
+plane description
+	plane center = 0.2500094342000000 +0.0000000456947865
+	zoom = 1.9999999999999998e+09
+	plane radius = 5.0000000000000003e-10
+	xMin = 2.5000943344999998e-01 	 xMax = 2.5000943495000000e-01
+	yMin = 4.5194786520646000e-08 	 yMax = 4.6194786520645995e-08
+	PixelWidth = 1.0006671201389287e-12   
+	pixel_spacing_bits = 39 	use float 
+ 
+Important parameters:
+	eps = 1.0006671201389288e-14
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	iterMax_Period = 3072000
+ 
+ 
+==========================================================================================================================
+
+
+
+ 
+	File 18_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+ 
+This island (=  mini Mandelbrot set) is 18 example from plane_examples 
+	Period of main  (pseudo)cardioid is 2048 
+	pseudocardioid_nucleus = 0.2500023558032561 +0.0000000057019859
+	pseudocardioid_cusp = 0.2500023557868725 +0.0000000056960147
+	pseudocardioid_root_half = 0.2500023558572207 +0.0000000057068957
+	second_bulb_nucleus = 0.2500023558753937 +0.0000000057061314
+	island distortion = 11.2323756629140412 degrees = 0.0312010435080946 turns = 643.5677194252175468 radians
+	island sizes: HalfRoot-Cusp  = 0.0000000000711847  = 0.3389746716406036 of Image Width 
+ 
+ 
+plane description
+	plane center = 0.2500023558300000 +0.0000000057019859
+	zoom = 1.4285714285714285e+10
+	plane radius = 7.0000000000000004e-11
+	xMin = 2.5000235572500001e-01 	 xMax = 2.5000235593500003e-01
+	yMin = 5.6319859127068459e-09 	 yMax = 5.7719859127068458e-09
+	PixelWidth = 1.4009340718844424e-13   
+	pixel_spacing_bits = 42 	use double 
+ 
+Important parameters:
+	eps = 1.4009340718844425e-15
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	iterMax_Period = 6144000
+ 
+ 
+==========================================================================================================================
+
+
+
+ 
+	File 19_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+ 
+This island (=  mini Mandelbrot set) is 19 example from plane_examples 
+	Period of main  (pseudo)cardioid is 4096 
+	pseudocardioid_nucleus = 0.2500005886128087 +0.0000000007121327
+	pseudocardioid_cusp = 0.2500005886107611 +0.0000000007113907
+	pseudocardioid_root_half = 0.2500005886195495 +0.0000000007127336
+	second_bulb_nucleus = 0.2500005886218190 +0.0000000007126340
+	island distortion = 11.2321190246282825 degrees = 0.0312003306239675 turns = 643.5530151345813010 radians
+	island sizes: HalfRoot-Cusp  = 0.0000000000088904  = 0.3570436044026896 of Image Width 
+ 
+ 
+plane description
+	plane center = 0.2500005886144000 +0.0000000007122000
+	zoom = 1.2048192771084338e+11
+	plane radius = 8.2999999999999998e-12
+	xMin = 2.5000058860195001e-01 	 xMax = 2.5000058862684998e-01
+	yMin = 7.0390000000000002e-10 	 yMax = 7.2049999999999994e-10
+	PixelWidth = 1.6611054685784222e-14   
+	pixel_spacing_bits = 45 	use double 
+ 
+Important parameters:
+	eps = 1.6611054685784223e-16
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	iterMax_Period = 12288000
+ 
+ 
+==========================================================================================================================
+
+
+
+ 
+	File 20_114.pgm saved . Comment = one parameter family of complex quadratic polynomial, parameter plane  
+ 
+This island (=  mini Mandelbrot set) is 20 example from plane_examples 
+	Period of main  (pseudo)cardioid is 8192 
+	pseudocardioid_nucleus = 0.2500001471109010 +0.0000000000889781
+	pseudocardioid_cusp = 0.2500001471106451 +0.0000000000888857
+	pseudocardioid_root_half = 0.2500001471117432 +0.0000000000890525
+	second_bulb_nucleus = 0.2500001471120268 +0.0000000000890398
+	island distortion = 11.2329396859086224 degrees = 0.0312026102386351 turns = 643.6000355623571068 radians
+	island sizes: HalfRoot-Cusp  = 0.0000000000011108  = 0.3365948792851283 of Image Width 
+ 
+ 
+plane description
+	plane center = 0.2500001471109010 +0.0000000000889781
+	zoom = 9.0909090909090918e+11
+	plane radius = 1.1000000000000000e-12
+	xMin = 2.5000014710925095e-01 	 xMax = 2.5000014711255097e-01
+	yMin = 8.7878142013896632e-11 	 yMax = 9.0078142013896635e-11
+	PixelWidth = 2.2014856026656539e-15   
+	pixel_spacing_bits = 48 	use double 
+ 
+Important parameters:
+	eps = 2.2014856026656539e-17
+	Escape Radius = ER = 2.0000000000000000e+00
+	iterMax_LastIteration = 100000
+	iterMax_Period = 24576000
  
  
 ==========================================================================================================================

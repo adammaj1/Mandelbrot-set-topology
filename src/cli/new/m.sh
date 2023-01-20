@@ -39,7 +39,7 @@ for file in *.pgm ; do
   # b is name of file without extension
   b=$(basename "$file" .pgm)
   # convert  using ImageMagic : -resize widthxheight || 
-  convert "${b}".pgm -resize '10%' "${b}".png  # iWidth = iHeight* DisplayAspectRatio 
+  convert "${b}".pgm -resize 600x400 "${b}".png  # iWidth = iHeight* DisplayAspectRatio -resize '10%'
   echo "$file"
 done
 

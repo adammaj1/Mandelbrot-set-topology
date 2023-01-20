@@ -95,8 +95,13 @@
 
 
 
-#define kMax 12 // number of examples, see line 211 plane_examples
+#define kMax 21 // number of examples, see line 211 plane_examples
 #define OrbitLength 50001 // redefine in local_setup
+
+
+
+
+
 // https://sourceforge.net/p/predef/wiki/Standards/
 
 #if defined(__STDC__)
@@ -110,8 +115,6 @@
 #endif
 #endif
 #endif
-
-
 
 
 
@@ -164,7 +167,7 @@ static int iWidth;	// horizontal dimension of array
 static int iyMin = 0;	// Indexes of array starts from 0 not 1
 static int iyMax;	//
 
-static int iHeight = 4000;	//  
+static int iHeight = 1000;	//  
 // The size of array has to be a positive constant integer 
 static int iSize;	// = iWidth*iHeight; 
 
@@ -225,27 +228,38 @@ complex double second_bulb_nucleus;
 
 
 /* 
-plane : plane_center_x,  plane_center_y,  plane_radius, period
+
 examples containing islands = minibrots
 note that plane_center does not equal to hyperbolic component  center
 plane radius is adjusted to show only 2 main components of the island
 https://mrob.com/pub/muency/mainsequence.html
 https://mrob.com/pub/muency/largestislands.html
 https://mrob.com/pub/mu-data/largest-islands.txt
+
+plane : plane_center_x,  		plane_center_y,  		plane_radius, 		period
 */
 double plane_examples[kMax][4] = {
-	{-0.4,		+0.0,		0.8,		1}, 
-	{+0.2925755,	-0.0149977, 	0.00025,	16}, 
-	{-1.763,  	+0.0,		0.016,		3}, 
-	{-0.15842, 	+1.03335, 	0.01,		4},  
-	{+0.358431,	+ 0.643507,	0.006,		5},  
-	{+0.442990,	+0.373727,	0.005,		6}, 
-	{+0.432259,	+0.227315,	0.003,		7}, 
-	{+0.404879,	+0.146216,	0.002,		8}, 
-	{+0.378631,	+0.098841,	0.001,		9}, 
-	{+0.356854, 	+0.069659,	0.001,		10},
-	{+0.339454,	+0.050823,	0.001,		11},
-	{+0.325631,	+0.038164,	0.001,		12}
+	{-0.4,				+0.0,				0.8,			1}, 
+	{+0.29254,			-0.01497, 			0.00015,		16}, 
+	{-1.763,  			+0.0,				0.016,			3}, 
+	{-0.15842, 			+1.03335, 			0.008,			4},  
+	{+0.358431,			+0.643507,			0.005,			5},  
+	{+0.442990,			+0.374,				0.003,			6},  
+	{+0.432259,			+0.2275,			0.002,			7}, 
+	{+0.404879,			+0.146216,			0.0015,			8}, 
+	{+0.378631,			+0.098841,			0.001,			9}, 
+	{+0.356854, 			+0.069659,			0.0007,			10},//
+	{+0.339454,			+0.050823,			0.0005,			11}, // 10
+	{+0.325631,			+0.038164,			0.0005,			12},
+	{+0.260270,		 	+0.00167,			0.00002, 		32 },
+	{+0.2524945,			+0.0001973,			0.0000025,		64},
+	{+0.25061329,			+0.00002399,			0.0000003,		128},
+	{+0.250151979,			+0.000002959,			0.000000036,		256},
+	{+0.250037823,			+0.0000003673,			0.000000004,		512}, 
+	{+0.2500094342,			+0.000000045694786520646,	0.0000000005,		1024}, //17  1024 	2.500094340031833728e-01 + 4.569478652064613658e-08 i 	1.144e-09
+	{+0.25000235583,		+5.701985912706845832e-09,	0.00000000007,		2048}, // 
+	{+0.2500005886144,		+0.0000000007122,		0.0000000000083,	4096}, // 19  8087162
+	{+2.500001471109009610e-01,	+8.897814201389663379e-11,	1.1e-12,		8192}  // 20 , long time 
 	 
 };
 
@@ -284,7 +298,7 @@ int iUnknownPeriod = -1;
 unsigned char iColorOfExterior 		= 255;
 unsigned char iColorOfInterior 		= 150;
 unsigned char iColorOfPseudoCardioid 	= 150;
-unsigned char iColorOfSecondBulb 	= 150;
+unsigned char iColorOfSecondBulb 	= 110;
 unsigned char iColorOfBoundary 		= 0;
 unsigned char iColorOfUnknown 		= 30;
 
@@ -302,6 +316,38 @@ time_t end_MultiplierMap;
 
 
 
+
+
+// This function swaps values pointed by xp and yp
+// https://www.geeksforgeeks.org/c-program-swap-two-numbers/
+void swap(double *xp, double *yp)
+{
+    double temp = *xp;
+    *xp = *yp;
+    *yp = temp;
+}
+
+
+
+
+// Function to find the angle between two lines. Each line is defined by 2 points
+double findAngleBetweenLines(const complex double z1a, const complex double z1b, const complex double z2a, const complex double z2b)
+{
+	// slope of line 1 and 2 
+	double m1 = (cimag(z1a) - cimag(z1b))/(creal(z1a) - creal(z1b));
+	double m2 = (cimag(z2a) - cimag(z2b))/(creal(z2a) - creal(z2b));
+	
+	double angle = fabs((m2 - m1)/ (1 + m1 * m2));
+
+	// Calculate tan inverse of the angle
+	double ret = atan(angle);
+
+	// Convert the angle from radian to degree
+	double val = (ret * 180) / M_PI;
+
+	// return the result
+	return val;
+}
 
 
 
@@ -338,32 +384,31 @@ complex double fc( const double complex z , const complex double c ){
 // uses global cons
 double Give_x (const int ix)
 {
-  return (xMin + ix * PixelWidth);
+	return (xMin + ix * PixelWidth);
 }
 
 // uses global cons
- double Give_y (const int iy) {
-  return (yMax - iy * PixelHeight);  // reverse y axis
+double Give_y (const int iy) {
+	return (yMax - iy * PixelHeight);  // reverse y axis
 }				
 
 
- complex double Give_c (const int ix, const int iy)
+
+// screen to world coordinate mapping
+complex double Give_c (const int ix, const int iy)
 {
-  double x = Give_x (ix);
-  double y = Give_y (iy);
+	double x = Give_x (ix);
+	double y = Give_y (iy);
 
-  return x + y * I;
-
-
-
+	return x + y * I;
 
 }
 
 
 /* ------------------------------------------ functions -------------------------------------------------------------*/
 
- double clamp(double x, double lo, double hi) {
-  return fmin(fmax(x, lo), hi);
+double clamp(double x, double lo, double hi) {
+	return fmin(fmax(x, lo), hi);
 }
 
 //------------------complex numbers -----------------------------------------------------
@@ -372,18 +417,18 @@ double Give_x (const int ix)
 
 
 static inline int sgn(double z) {
-  if (z > 0) { return  1; }
-  if (z < 0) { return -1; }
-  return 0;
+	if (z > 0) { return  1; }
+	if (z < 0) { return -1; }
+	return 0;
 }
 
 static inline bool odd(int a) {
-  return a & 1;
+	return a & 1;
 }
 
 
 static inline bool cisfinite(double _Complex z) {
-  return isfinite(creal(z)) && isfinite(cimag(z));
+	return isfinite(creal(z)) && isfinite(cimag(z));
 }
 
 
@@ -550,7 +595,7 @@ complex double aproximate_c( const int p, const complex double center, const com
 
 
 
-complex double give_c(const int p, const complex double center, const double angle, const double r )
+complex double give_c_from_multiplier(const int p, const complex double center, const double angle, const double r )
 {
 	/*
 	input:
@@ -638,7 +683,12 @@ int CopyBoundaries(const unsigned char S[],  unsigned char D[])
   fprintf(stderr, "\tcopy boundaries from S array to D array \n");
   for(iY=1;iY<iyMax-1;++iY)
     for(iX=1;iX<ixMax-1;++iX)
-      {i= Give_i(iX,iY); if (S[i]==0) D[i]=0;}
+      {
+		i= Give_i(iX,iY); 
+		if(i>-1 && i< iMax)
+			{if (S[i]==0) {D[i]=0;} }
+			else { fprintf(stderr, "point is out viewport \n");}
+      }
  
  
  
@@ -1139,15 +1189,15 @@ int DrawImage (const int k, const RepresentationFunctionTypeT RepresentationFunc
   	
   	const int period = (int) plane_examples[k][3];
   	// start computing unknown pixels , if iUnknown <0 it means that it was not used !
-  	if (RepresentationFunctionType==LastIteration ) {iUnknownTopology = 0;}
-  	if (RepresentationFunctionType==Period ) 	{iUnknownPeriod = 0;} 
+  	//if (RepresentationFunctionType==LastIteration ) {iUnknownTopology = 0;}
+  	//if (RepresentationFunctionType==Period ) 	{iUnknownPeriod = 0;} 
 
-  	fprintf(stderr, "\tRepresentationFunctionType = %d period = %d  iterMax_Period %d\n", RepresentationFunctionType, period,iterMax_Period);
+  	fprintf(stderr, "\tRepresentationFunctionType = %d period = %d  \n", RepresentationFunctionType, period);
  	// for all pixels of image 
 	#pragma omp parallel for schedule(dynamic,1) private(ix,iy) shared(A, ixMax , iyMax)
 	// #pragma omp parallel for schedule(dynamic, 1)
   	for (iy = iyMin; iy <= iyMax; ++iy){
-    		fprintf (stderr, "\t%d from %d \r", iy, iyMax);	//info 
+    		fprintf (stderr, "\t\t%d from %d \r", iy, iyMax);	//info 
     		for (ix = ixMin; ix <= ixMax; ++ix)
       			{DrawPoint(period, RepresentationFunctionType,   ix, iy, A);}	//  
   		}
@@ -1187,8 +1237,9 @@ int PlotBigPoint(const complex double c, const unsigned char iColor, const doubl
     for(iX=ix_seed-iSide;iX<=ix_seed+iSide;++iX){ 
       if (IsInsideCircle(iX, iY, ix_seed, iy_seed, iSide)) {
 	i= Give_i(iX,iY); /* index of _data array */
-	//if(i>-1 && i< iMax)
-	A[i] = iColor;
+	if(i>-1 && i< iMax)
+		{A[i] = iColor;}
+		else { fprintf(stderr, "point is out viewport \n");}
       }
       // else {printf(" bad point \n");}
 	
@@ -1198,6 +1249,194 @@ int PlotBigPoint(const complex double c, const unsigned char iColor, const doubl
   return 0;
 	
 }
+
+
+
+// plots raster point (ix,iy) 
+int iDrawPoint( int ix, int iy, unsigned char iColor, unsigned char A[]){ 
+
+  /* i =  Give_i(ix,iy) compute index of 1D array from indices of 2D array */
+	if (ix >=ixMin && ix<=ixMax && iy >=iyMin && iy<=iyMax )
+		{A[Give_i(ix,iy)] = iColor;}
+		else {fprintf (stdout,"iDrawPoint :   (%d; %d) is outside\n", ix,iy); return 1; }
+
+	return 0;
+}
+
+
+
+
+//------------------------- draw arc -----------------------------------------------
+
+void dDrawPoint(const complex double c, unsigned char color,  unsigned char A[]){
+
+	int ix, iy; // screen coordinate = indices of virtual 2D array 
+	ix = (creal(c)- xMin)/PixelWidth; 
+  	iy = (yMax - cimag(c))/PixelHeight; // inverse Y axis 
+  	iDrawPoint( ix, iy, color, A);
+}
+
+
+
+
+
+// y = b + r sin t
+// sin accepts angle expressed in radians 
+void dDrawCirclePoint(const complex double circle_center, const double angle, const double radius, unsigned char color, unsigned char A[] ){
+
+	double x = creal(circle_center) + radius * cos(angle*2.0*M_PI); // x = a + r cos t, angle is in turns, is converted to radian
+	double y = cimag(circle_center) + radius * sin(angle*2.0*M_PI);
+	complex double c = x + y*I;
+	dDrawPoint( c, color,  A);
+	
+}
+
+
+
+
+// angles are measured in turns so t is in [0,1] range
+// 0.0 <= start_angle < end_angle <= 1.0
+
+int DrawArc(const complex double circle_center, const double start_angle, const double end_angle, const double radius, unsigned char color, unsigned char A[]){
+
+	
+	
+	double dx = xMax- xMin;
+	
+	int iMax = 10.0*iWidth * radius/dx;
+	double dt = 1.0/iMax; // angle step ; 
+	double angle;
+	
+	
+	if (radius > dx) {fprintf(stderr," to big radius = %.16f > image_width = %.16f\n", radius, dx); return 1;}
+	
+	angle = start_angle;
+	while (angle <= end_angle){
+		dDrawCirclePoint( circle_center, angle, radius, color, A);
+		dDrawCirclePoint( circle_center, angle, radius + PixelWidth, color, A); // thick curve by lazy programmer
+		dDrawCirclePoint( circle_center, angle, radius - PixelWidth, color, A);
+		angle += dt;
+	} 
+	
+
+	return 0;
+
+}
+
+
+
+
+
+
+
+
+// -----------------------------------------------------------------------------------------
+// ------------------- draw segment of the line ---------------------------------------------
+//-------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+/*
+  http://rosettacode.org/wiki/Bitmap/Bresenham%27s_line_algorithm
+  Instead of swaps in the initialisation use error calculation for both directions x and y simultaneously:
+*/
+void iDrawLine( int x0, int y0, int x1, int y1, unsigned char iColor, unsigned char A[]) 
+{
+  int x=x0; int y=y0;
+  int dx = abs(x1-x0), sx = x0<x1 ? 1 : -1;
+  int dy = abs(y1-y0), sy = y0<y1 ? 1 : -1; 
+  int err = (dx>dy ? dx : -dy)/2, e2;
+
+  for(;;){
+    iDrawPoint(x, y, iColor, A);
+    if (x==x1 && y==y1) break;
+    e2 = err;
+    if (e2 >-dx) { err -= dy; x += sx; }
+    if (e2 < dy) { err += dx; y += sy; }
+  }
+}
+
+
+
+
+int dDrawLineSegment(const double complex Z0, const double complex Z1, const unsigned char color, unsigned char A[]){
+
+  double Zx0 = creal(Z0);
+  double Zy0 = cimag(Z0);
+  double Zx1 = creal(Z1);
+  double Zy1 = cimag(Z1);
+  int ix0, iy0; // screen coordinate = indices of virtual 2D array 
+  int ix1, iy1; // screen coordinate = indices of virtual 2D array
+
+  // first step of clipping
+  //if (  Zx0 < ZxMax &&  Zx0 > ZxMin && Zy0 > ZyMin && Zy0 <ZyMax 
+  // && Zx1 < ZxMax &&  Zx1 > ZxMin && Zy1 > ZyMin && Zy1 <ZyMax )
+   	
+  ix0= (Zx0- xMin)/PixelWidth; 
+  iy0 = (yMax - Zy0)/PixelHeight; // inverse Y axis 
+  ix1= (Zx1- xMin)/PixelWidth; 
+  iy1= (yMax - Zy1)/PixelHeight; // inverse Y axis 
+   	
+  // second step of clipping
+  if (ix0 >=ixMin && ix0<=ixMax && ix0 >=ixMin && ix0<=ixMax && iy0 >=iyMin && iy0<=iyMax && iy1 >=iyMin && iy1<=iyMax )
+    iDrawLine(ix0,iy0,ix1,iy1,color, A) ;
+
+  return 0;
+}
+
+
+int dDrawThickLineSegment(const double complex Z0, const double complex Z1, const unsigned char color, unsigned char A[]){
+
+	dDrawLineSegment(Z0, 			Z1, 			color,  A);
+	dDrawLineSegment(Z0+PixelWidth, 	Z1+PixelWidth, 		color,  A); // thic line by lazy programmer
+	dDrawLineSegment(Z0-PixelWidth, 	Z1-PixelWidth, 		color,  A);
+	dDrawLineSegment(Z0+PixelHeight*I, 	Z1+PixelHeight*I, 	color,  A);
+	dDrawLineSegment(Z0-PixelHeight*I, 	Z1-PixelHeight*I, 	color,  A);
+	
+  return 0;
+}
+
+int dDrawThickExtendedLineAndArcSegment(const double complex Z0, const double complex Z1, const double complex Z2, const unsigned char color, unsigned char A[]){
+
+	
+		
+	/* 
+		new point on the line but Z0 is a center of a circle, Z1 is a point on the circle
+		circle equation in Parametric form  
+		x = a + r*cos(t)
+		y = b + r*sin (t)
+		where t is a parametric variable in the range 0 to 2pi, interpreted geometrically as the angle]
+	*/
+	double radius = cabs( Z0 - Z1);
+	//double val = 180.0 / M_PI;
+
+	double angle1 = M_PI + atan2(cimag(Z0) - cimag(Z1), creal(Z0) - creal(Z1)); //  radians in range [0,2 pi]
+	double angle2 = M_PI + atan2(cimag(Z1) - cimag(Z2), creal(Z1) - creal(Z2)); //  radians in range [0,2 pi]
+	
+	
+	
+	double dr = PixelWidth*iWidth/20;
+	double x = creal(Z0) +  (radius + dr) *  cos(angle1);
+	double y = cimag(Z0) +  (radius + dr) *  sin(angle1);
+	complex double Z1new = x+y*I;
+	
+	// draw thick line
+	dDrawThickLineSegment(Z0, Z1new, color, A);
+	// Arc
+	
+	if (angle2 < angle1) {swap( &angle1, &angle2);} // islands are rotating
+	angle1 = angle1/(2.0*M_PI); // from radians to turns
+	angle2 = angle2/(2.0*M_PI); // from radians to turns
+	DrawArc( Z1, angle1, angle2, dr, color, A); // show distorion angle
+	
+  return 0;
+}
+
+
 
 
 
@@ -1393,48 +1632,31 @@ void PrintInfoAboutImage(const int k){
 	fprintf(stdout, "This island (=  mini Mandelbrot set) is %d example from plane_examples \n",k);
 	fprintf(stdout, "\tPeriod of main  (pseudo)cardioid is %d \n", (int) plane_examples[k][3]); 
 	fprintf(stdout, "\tpseudocardioid_nucleus = %.16f %+0.16f\n",creal(pseudocardioid_nucleus), cimag(pseudocardioid_nucleus));
+	fprintf(stdout, "\tpseudocardioid_cusp = %.16f %+0.16f\n",creal(pseudocardioid_cusp), cimag(pseudocardioid_cusp));
+	fprintf(stdout, "\tpseudocardioid_root_half = %.16f %+0.16f\n",creal(pseudocardioid_root_half), cimag(pseudocardioid_root_half));
 	fprintf(stdout, "\tsecond_bulb_nucleus = %.16f %+0.16f\n",creal(second_bulb_nucleus), cimag(second_bulb_nucleus));
-	
-	/*
-	if (iUnknownTopology>-1) // if 
-		{
-			fprintf(stdout, "unknown Topology pixels are computed in last_iteration procedure ( exterior/interior paritition)\n");
-			fprintf(stdout, "\t unknown Topology pixels = %d pixels = %.16f of all pixels\n", iUnknownTopology, ((double) iUnknownTopology)/iSize);
-			fprintf(stdout, "\t No unknown topology pixels ( zero) is a perfect target, but less then 1 %% of all pixels ( ratio < 0.01 ) is also OK ( acceptable)\n");
-			fprintf(stdout, " \n");
-		}
-		
-	if (iUnknownPeriod>-1)
-		{
-			fprintf(stdout, "unknown period pixels are computed in GivePeriod procedure\n");
-			fprintf(stdout, "\t unknown Period pixels = %d pixels = %.16f of all pixels\n", iUnknownPeriod, ((double) iUnknownPeriod)/iSize);
-			fprintf(stdout, "\t No unknown pixels ( zero) is a perfect target, but less then 1 %% of all pixels ( ratio < 0.01 ) is also OK ( acceptable)\n");
-			fprintf(stdout, " \n");
-		
-		}
-	*/
-	fprintf(stdout, "plane description\n");
+	// 
+	double distortion = findAngleBetweenLines(pseudocardioid_nucleus, pseudocardioid_cusp, pseudocardioid_cusp, pseudocardioid_root_half);
+	fprintf(stdout, "\tisland distortion = %.16f degrees = %.16f turns = %.16f radians\n", distortion, distortion/ 360.0 , distortion/0.017453292519);
+	double island_size = cabs(pseudocardioid_cusp - pseudocardioid_root_half);
+	fprintf(stdout, "\tisland sizes: HalfRoot-Cusp  = %.16f  = %.16f of Image Width \n", island_size, island_size/ (xMax-xMin));
+	fprintf(stdout, " \n");
+	fprintf(stdout, " \n");
+		fprintf(stdout, "plane description\n");
 	fprintf(stdout, "\tplane center = %.16f %+0.16f\n",creal(plane_center), cimag(plane_center));
 	fprintf(stdout, "\tzoom = %.16e\n",zoom);
 	fprintf(stdout, "\tplane radius = %.16e\n",plane_radius);
-	fprintf(stdout, "\tPixelWidth = %.16e   \n", PixelWidth); 
 	fprintf(stdout, "\txMin = %.16e \t xMax = %.16e\n",xMin, xMax); // 
 	fprintf(stdout, "\tyMin = %.16e \t yMax = %.16e\n",yMin, yMax); 
+	fprintf(stdout, "\tPixelWidth = %.16e   \n", PixelWidth); 
+	PrintInfoAboutPixelSize(iPixelSpacingBits);
 	fprintf(stdout, " \n");
 	fprintf(stdout, "Important parameters:\n");
 	fprintf(stdout, "\teps = %.16e\n",eps);
 	fprintf(stdout, "\tEscape Radius = ER = %.16e\n", ER);
 	fprintf(stdout, "\titerMax_LastIteration = %d\n", iterMax_LastIteration);
-	fprintf(stdout, "\tPixelWidth = %.16e   \n", PixelWidth); 
-	PrintInfoAboutPixelSize(iPixelSpacingBits);
+	fprintf(stdout, "\titerMax_Period = %d\n", iterMax_Period);// iterMax_Period %d\n", RepresentationFunctionType, period,iterMax_Period);
 	fprintf(stdout, " \n");
-	
-	/*
-	double time_LastIteration = difftime (end_LastIteration, start_LastIteration);
-	double time_Period = difftime (end_Period, start_Period);
-	double time_MultiplierMap = difftime (end_MultiplierMap, start_MultiplierMap);
-	fprintf(stdout, "execution time of DrawImage for LastIteration = %.0f \tfor Period = %.0f \tMultiplierMap = %.0f seconds\n", time_LastIteration, time_Period, time_MultiplierMap);
-	*/
 	fprintf(stdout, " \n");
 	
 	
@@ -1534,27 +1756,32 @@ PeriodLCM = 111,
 	//time (&end_MultiplierMap);
 	
 	Name = GiveName(k, MultiplierMap);
-	SaveImage(data, Name); 
+	//SaveImage(data, Name); 
 	
 	
 	
 	
 	ComputeBoundaries(data,edge); // boundaries of LastIteration = 101
-	Name = GiveName(k, LCM);
-	SaveImage(edge, Name); 
+	//Name = GiveName(k, LCM);
+	//SaveImage(edge, Name); 
 	
 	CopyBoundaries(edge, data); // 111
-	Name = GiveName(k, MultiplierMapLCM);
-	SaveImage(data, Name); 
+	//Name = GiveName(k, MultiplierMapLCM);
+	//SaveImage(data, Name); 
 	
 	// 
-	pseudocardioid_cusp = give_c((int) plane_examples[k][3], pseudocardioid_nucleus, 0.0, 1.0 );
-	pseudocardioid_root_half = give_c((int) plane_examples[k][3], pseudocardioid_nucleus, 0.5, 1.0 );
+	pseudocardioid_cusp = give_c_from_multiplier((int) plane_examples[k][3], pseudocardioid_nucleus, 0.0, 1.0 );
+	pseudocardioid_root_half = give_c_from_multiplier((int) plane_examples[k][3], pseudocardioid_nucleus, 0.5, 1.0 );
 	
 	PlotBigPoint(pseudocardioid_nucleus, iColorOfBoundary, 10.0, data);
 	PlotBigPoint(pseudocardioid_cusp, iColorOfBoundary, 10.0, data);
 	PlotBigPoint(pseudocardioid_root_half, iColorOfBoundary, 10.0, data);
 	PlotBigPoint(second_bulb_nucleus, iColorOfBoundary, 10.0, data);
+	
+	dDrawThickExtendedLineAndArcSegment(pseudocardioid_cusp, pseudocardioid_nucleus, pseudocardioid_root_half, iColorOfBoundary, data);
+	
+	dDrawThickLineSegment(pseudocardioid_nucleus, pseudocardioid_root_half, iColorOfBoundary, data);
+	
 	
 	
 	Name = GiveName(k, MultiplierMapAll);
@@ -1598,11 +1825,11 @@ void end(void){
 
 int main () {
   
-  	int k =0; // example number
-  
+  	int k = 0; // example number
+	
 	global_setup();
 	
-	for (k=0; k<kMax; ++k) {
+	for (k=0; k<kMax; ++k) { // kMax
 		MakeImagesForExample(k);
 	}
 		
