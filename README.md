@@ -33,24 +33,35 @@ Here are few examples of [islands](https://en.wikibooks.org/wiki/Fractals/Iterat
 * for more description see the [output the new txt file m.txt](./src/cli/new/m.txt) and [output the old txt file m.txt](./src/cli/old/m.txt)
 
 ```c
-#define kMax 12 // number of examples, see line 211 plane_examples
+#define kMax 21 // number of examples, see plane_examples
 
-// plane_center_x	plane_center_y	plane_radius	island_period
+//plane : plane_center_x,  		plane_center_y,  		plane_radius, 		period
+
 double plane_examples[kMax][4] = {
-	{-0.4,		+0.0,		0.8,		1}, 
-	{+0.2925755,	-0.0149977, 	0.00025,	16}, 
-	{-1.763,  	+0.0,		0.016,		3}, 
-	{-0.15842, 	+1.03335, 	0.01,		4},  
-	{+0.358431,	+ 0.643507,	0.006,		5},  
-	{+0.442990,	+0.373727,	0.005,		6}, 
-	{+0.432259,	+0.227315,	0.003,		7}, 
-	{+0.404879,	+0.146216,	0.002,		8}, 
-	{+0.378631,	+0.098841,	0.001,		9}, 
-	{+0.356854, 	+0.069659,	0.001,		10},
-	{+0.339454,	+0.050823,	0.001,		11},
-	{+0.325631,	+0.038164,	0.001,		12}
+	{-0.4,				+0.0,				0.8,			1}, // k = 0
+	{+0.29254,			-0.01497, 			0.00015,		16}, 
+	{-1.763,  			+0.0,				0.016,			3}, 
+	{-0.15842, 			+1.03335, 			0.008,			4},  
+	{+0.358431,			+0.643507,			0.005,			5},  
+	{+0.442990,			+0.374,				0.003,			6},  
+	{+0.432259,			+0.2275,			0.002,			7}, 
+	{+0.404879,			+0.146216,			0.0015,			8}, 
+	{+0.378631,			+0.098841,			0.001,			9}, 
+	{+0.356854, 			+0.069659,			0.0007,			10},
+	{+0.339454,			+0.050823,			0.0005,			11}, // k = 10
+	{+0.325631,			+0.038164,			0.0005,			12},
+	{+0.260270,		 	+0.00167,			0.00002, 		32 },
+	{+0.2524945,			+0.0001973,			0.0000025,		64},
+	{+0.25061329,			+0.00002399,			0.0000003,		128},
+	{+0.250151979,			+0.000002959,			0.000000036,		256},
+	{+0.250037823,			+0.0000003673,			0.000000004,		512}, 
+	{+0.2500094342,			+0.000000045694786520646,	0.0000000005,		1024}, //
+	{+0.25000235583,		+5.701985912706845832e-09,	0.00000000007,		2048}, // 
+	{+0.2500005886144,		+0.0000000007122,		0.0000000000083,	4096}, //
+	{+2.500001471109009610e-01,	+8.897814201389663379e-11,	1.1e-12,		8192}  //  long time 
 	 
 };
+
 ```
 ## Period 1
 peroid = 1 = whole Mandelbrot set  ( using LastIterarion method with interior detection)
@@ -154,8 +165,48 @@ With important points, axes and distortion angle
 ![](./png/11_114.png "description") 
 
 
+## Period 32 
+
+![](./png/12_114.png "description") 
 
 
+## Period 64 
+
+![](./png/13_114.png "description") 
+
+
+## Period 128
+
+![](./png/14_114.png "description") 
+
+
+## Period 256
+
+![](./png/15_114.png "description") 
+
+
+## Period 512 
+
+![](./png/16_114.png "description") 
+
+
+## Period 1024 
+
+![](./png/17_114.png "description") 
+
+## Period 2048 
+
+![](./png/18_114.png "description") 
+
+
+## Period 4096 
+
+![](./png/19_114.png "description") 
+
+
+## Period 8192 
+
+![](./png/20_114.png "description") 
 
 # Files
 * [m.c](./src/cli/new/m.c) - one file c program
