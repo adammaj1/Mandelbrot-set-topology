@@ -343,11 +343,12 @@ to overwrite
 ```
 git mv -f 
 ```
+the other files
 
 ```
 git mv ./src/*.c ./src/modified/bash/
 git mv ./src/*.sh ./src/modified/bash/
-gitt mv ./src/Makefile ./src/modified/bash/
+git mv ./src/Makefile ./src/modified/bash/
 ```
 
 
