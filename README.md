@@ -286,6 +286,11 @@ Description
 
 
 
+# See also
+* [Mandelbrot in C language with arbitrary precision by Jose Celano](https://github.com/josecelano/c-mandelbrot-arbitrary-precision)
+
+
+
 # Git
 
 create a new repository on the command line
